@@ -1,14 +1,24 @@
+/* 속성 */
+.fw-100 {font-weight: 100;}
+.fw-300 {font-weight: 300;}
+.fw-400 {font-weight: 400;}
+.fw-700 {font-weight: 700;}
+
 /* 폰트설정 */
-* {font-family:'Spoqa Han Sans';}
-@font-face { font-family: 'Spoqa Han Sans'; font-weight: 700; src: local('Spoqa Han Sans Bold'), url('../font/SpoqaHanSansBold.woff2') format('woff2'), url('../font/SpoqaHanSansBold.woff') format('woff'), url('../font/SpoqaHanSansBold.ttf') format('truetype'); }
-@font-face { font-family: 'Spoqa Han Sans'; font-weight: 400; src: local('Spoqa Han Sans Regular'), url('../font/SpoqaHanSansRegular.woff2') format('woff2'), url('../font/SpoqaHanSansRegular.woff') format('woff'), url('../font/SpoqaHanSansRegular.ttf') format('truetype'); }
-@font-face { font-family: 'Spoqa Han Sans'; font-weight: 300; src: local('Spoqa Han Sans Light'), url('../font/SpoqaHanSansLight.woff2') format('woff2'), url('../font/SpoqaHanSansLight.woff') format('woff'), url('../font/SpoqaHanSansLight.ttf') format('truetype'); }
-@font-face { font-family: 'Spoqa Han Sans'; font-weight: 100; src: local('Spoqa Han Sans Thin'), url('../font/SpoqaHanSansThin.woff2') format('woff2'), url('../font/SpoqaHanSansThin.woff') format('woff'), url('../font/SpoqaHanSansThin.ttf') format('truetype'); }
+body {font-family:'Spoqa Han Sans';font-weight:300;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+@font-face {font-family: 'Spoqa Han Sans'; font-weight: 700; src: local('Spoqa Han Sans Bold'), url('../font/SpoqaHanSansBold.woff2') format('woff2'), url('../font/SpoqaHanSansBold.woff') format('woff'), url('../font/SpoqaHanSansBold.ttf') format('truetype');}
+@font-face {font-family: 'Spoqa Han Sans'; font-weight: 400; src: local('Spoqa Han Sans Regular'), url('../font/SpoqaHanSansRegular.woff2') format('woff2'), url('../font/SpoqaHanSansRegular.woff') format('woff'), url('../font/SpoqaHanSansRegular.ttf') format('truetype');}
+@font-face {font-family: 'Spoqa Han Sans'; font-weight: 300; src: local('Spoqa Han Sans Light'), url('../font/SpoqaHanSansLight.woff2') format('woff2'), url('../font/SpoqaHanSansLight.woff') format('woff'), url('../font/SpoqaHanSansLight.ttf') format('truetype');}
+@font-face {font-family: 'Spoqa Han Sans'; font-weight: 100; src: local('Spoqa Han Sans Thin'), url('../font/SpoqaHanSansThin.woff2') format('woff2'), url('../font/SpoqaHanSansThin.woff') format('woff'), url('../font/SpoqaHanSansThin.ttf') format('truetype');}
 
 /* 메뉴 */
-header:after { content:""; display:block; clear:both; }
-header .class { float: left; }
-header nav { float: right; }
+header {width: 96%; position: fixed; padding: 2%;}
+header nav:after {content:""; display:block; clear:both;}
+header nav .logo {float: left;}
+header nav .menu {float: right;}
+header nav .logo i {font-size: 2em;}
+header nav .menu i {font-size: 2em;}
 
 /* 메인화면 */
-.hello {}
+.hello {display: flex; align-items: center; justify-content: center; text-align: center;}
+.hello p {word-break: keep-all; margin: 0 10%; text-shadow: 3px 3px 1px rgba(0,0,0,0.1); font-size: 2em; line-height: 1.4em;}
