@@ -22,3 +22,22 @@ header nav .menu i {font-size: 2em;}
 /* 메인화면 */
 .hello {display: flex; align-items: center; justify-content: center; text-align: center;}
 .hello p {word-break: keep-all; margin: 0 10%; text-shadow: 3px 3px 1px rgba(0,0,0,0.1); font-size: 2em; line-height: 1.4em;}
+
+.arrow {
+	position: absolute;
+	bottom: 8%;
+	animation-duration: 0.8s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.75, 0, 1, 1);
+}
+
+@keyframes slidein {
+	from {
+		bottom: 8%;
+	}
+	to {
+		bottom: 4%;
+	}
+}
