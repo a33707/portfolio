@@ -2,10 +2,11 @@
 <html>
 <head>
 	<title>yyoon</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+	<!-- <script src="js/js.js"></script> -->
 	<meta name="viewport" content="width=device-width" />
 	<meta charset="utf-8">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -17,25 +18,45 @@
 	    }); 
 	});
 	</script>
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+		$('.menu-btn').click(function(){
+		  if ($('.menu').hasClass('show')) {
+				$('.menu').removeClass('show');
+				$('.logo').css('color','#000');
+				$('.menu-btn').css('color','#000');
+			} else {
+				$('.menu').addClass('show');
+				$('.logo').css('color','#fff');
+				$('.menu-btn').css('color','#fff');
+			}
+		});
+	});
+	</script>
 </head>
 <body>
+<aside class="menu">
+	<a class="fw-700" href="work.html">소개</a>
+	<a class="fw-700" href="">작업</a>
+	<a class="fw-700" href="">스냅</a>
+</aside>
 <header>
 	<nav>
 		<a href="" class="logo"><i class="material-icons">face</i></a>
-		<a href="" class="menu"><i class="material-icons">menu</i></a>
+		<a class="menu-btn"><i class="material-icons">menu</i></a>
 	</nav>
 </header>
 <article class="hello">
 	<p>유저 인터페이스를 <span class="fw-400">디자인</span>하고 <span class="fw-400">코딩</span>하는 윤창윤입니다.</p>
-	<i class="material-icons arrow">arrow_downward</i>
 </article>
-<article class="hello" style="background-color: #aaa; height: 400px;">
+<i class="material-icons arrow">arrow_downward</i>
+<article class="hello" style="background-color: #aaa;">
 	<p>대단한 것</p>
 </article>
-<article class="hello" style="background-color: #ccc; height: 400px;">
+<article class="hello" style="background-color: #ccc;">
 	<p>멋진 것</p>
 </article>
-<article class="hello" style="background-color: #eee; height: 400px;">
+<article class="hello" style="background-color: #eee;">
 	<p>굉장한 것</p>
 </article>
 </body>

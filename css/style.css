@@ -14,10 +14,11 @@ body {font-family:'Spoqa Han Sans';font-weight:300;-webkit-font-smoothing: antia
 /* 메뉴 */
 header {width: 96%; position: fixed; padding: 2%;}
 header nav:after {content:""; display:block; clear:both;}
-header nav .logo {float: left;}
-header nav .menu {float: right;}
+header nav .logo {float: left; cursor: help;}
+header nav .menu-btn {float: right; cursor: pointer;}
 header nav .logo i {font-size: 2em;}
-header nav .menu i {font-size: 2em;}
+header nav .menu-btn i {font-size: 2em;}
+
 
 /* 메인화면 */
 .hello {display: flex; align-items: center; justify-content: center; text-align: center;}
@@ -26,14 +27,15 @@ header nav .menu i {font-size: 2em;}
 .arrow {
 	position: absolute;
 	bottom: 8%;
+	left: calc(50% - 12px);
 	animation-duration: 0.8s;
-	animation-name: slidein;
+	animation-name: scrolldown;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
     animation-timing-function: cubic-bezier(0.75, 0, 1, 1);
 }
 
-@keyframes slidein {
+@keyframes scrolldown {
 	from {
 		bottom: 8%;
 	}
@@ -41,3 +43,23 @@ header nav .menu i {font-size: 2em;}
 		bottom: 4%;
 	}
 }
+
+.menu {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);	
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.menu a {
+	word-break: keep-all;
+	text-shadow: 3px 3px 1px rgba(0,0,0,0.1);
+	font-size: 4em;
+    line-height: 2em;
+	color: #fff;
+}
+.show {display: flex;}
