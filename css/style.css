@@ -5,7 +5,28 @@ img {width: 100%;}
 .fw-300 {font-weight: 300;}
 .fw-400 {font-weight: 400;}
 .fw-700 {font-weight: 700;}
-.full-w {margin: 0 auto; padding: 0; width: 100% !important;}
+.full-w, .cover {margin: 0 auto; padding: 0; width: 100% !important;}
+.row {margin-top: 5%;}
+.row:first-child {margin: 0;}
+.row img {width: 95%; box-shadow: 2px 2px 6px rgba(0,0,0,0.1);}
+.row * {text-align: center;}
+.row *:first-child {text-align: left;}
+.row *:last-child {text-align: right;}
+.row:after {clear: both; display: block; content: ""}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {float: left;}
+.col-12 {width: 100%;}
+.col-12 img {width: 100%;}
+.col-11 {width: 91.66666667%;}
+.col-10 {width: 83.33333333%;}
+.col-9 {width: 75%;}
+.col-8 {width: 66.66666667%;}
+.col-7 {width: 58.33333333%;}
+.col-6 {width: 50%;}
+.col-5 {width: 41.66666667%;}
+.col-4 {width: 33.33333333%;}
+.col-3 {width: 25%;}
+.col-2 {width: 16.66666667%;}
+.col-1 {width: 8.33333333%;}
 
 /* 폰트설정 */
 body {font-family:'Spoqa Han Sans';font-weight:300;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
@@ -40,7 +61,6 @@ header nav .close {display: none; color: #fff;}
 }
 .menu a {
 	word-break: keep-all;
-	text-shadow: 3px 3px 1px rgba(0,0,0,0.1);
 	font-size: 4em;
     line-height: 2em;
 	color: #fff;
@@ -48,31 +68,42 @@ header nav .close {display: none; color: #fff;}
 .show {display: flex;}
 
 /* 작업화면 */
-#portfolio h2 {font-size: 72px; font-weight: 700; margin: 0 0 40px;}
-#portfolio h3 {font-size: 32px; font-weight: 700; margin: 0 0 40px;}
-#portfolio p {font-size: 18px; margin: 0; line-height: 30px;}
-#portfolio .subhead {font-size: 36px; font-weight: 400; margin-bottom: 80px; line-height: 48px;}
+.portfolio .cover {background-position: center; background-repeat: no-repeat; background-size: cover; height: 35vw; margin-bottom: 160px;display: flex; align-items: center; justify-content: center;}
+.portfolio .cover img {width: 10%;}
+#luxi .cover {background-image: url(/portfolio/images/luxi/luxi-bg.jpg)}
+#hanintel .cover {background-image: url(/portfolio/images/hanintel/hanintel-bg.jpg)}
+#posco .cover {background-image: url(/portfolio/images/posco/posco-bg.jpg)}
+#hyosung .cover {background-image: url(/portfolio/images/hyosung/hyosung-bg.jpg)}
+
+.portfolio h2 {font-size: 72px; font-weight: 700; margin: 0 0 40px;}
+.portfolio h3 {font-size: 32px; font-weight: 700; margin: 0 0 40px;}
+.portfolio p {font-size: 18px; margin: 0; line-height: 30px;}
+.portfolio .subhead {font-size: 36px; font-weight: 400; margin-bottom: 80px; line-height: 48px;}
 
 
-#portfolio .header, #portfolio .img, #portfolio .content {margin: 0 auto 160px; padding: 0; width: 60%;}
+.portfolio .header, .portfolio .img, .portfolio .text {margin: 0 auto 160px; padding: 0; width: 60%;}
 
-#portfolio .header {
-	margin-top: 200px;
+.portfolio .header {
+	margin-top: 160px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#portfolio .content {
-
+.portfolio .text {
+	margin-bottom: 80px;
 }
 
-#portfolio .meta .category, #portfolio .meta .date {color: #666666; float: left;}
-#portfolio .meta:after {display: block; content: ""; clear: both;}
-#portfolio .meta .category {}
-#portfolio .meta .date {margin-left: 40px;}
+.portfolio .meta .category, .portfolio .meta .date {color: #666666; float: left;}
+.portfolio .meta:after {display: block; content: ""; clear: both;}
+.portfolio .meta .category {}
+.portfolio .meta .date {margin-left: 40px;}
 
 @media (max-width:769px) {
-	#portfolio p {font-size: 14px; margin: 0; line-height: 24px;}
-	#portfolio .header, #portfolio .img, #portfolio .content {width: 80%;}
-	#portfolio .subhead {font-size: 24px; font-weight: 400; margin-bottom: 80px; line-height: 35px;}
+	.portfolio p {font-size: 14px; margin: 0; line-height: 24px;}
+	.portfolio .header, .portfolio .img, .portfolio .text {width: 80%; margin-bottom: 80px;}
+	.portfolio .text {margin-bottom: 40px;}
+	.portfolio .subhead {font-size: 24px; font-weight: 400; margin-bottom: 80px; line-height: 35px;}
+	.portfolio .cover {margin-bottom: 80px;}
+	.portfolio .cover img {width: 20%;}
+	.menu a {font-size: 3em; line-height: 2em;}
 }
