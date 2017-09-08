@@ -76,11 +76,7 @@ header nav .close {display: none; color: #fff;}
 #hyosung .cover {background-image: url(/images/hyosung/hyosung-bg.jpg)}
 
 .portfolio h2 {font-size: 72px; font-weight: 700; margin: 0 0 40px;}
-<<<<<<< HEAD
 .portfolio h3 {font-size: 32px; font-weight: 700; line-height: 40px; margin: 0 0 40px;}
-=======
-.portfolio h3 {font-size: 32px; font-weight: 700; margin: 0 0 40px;}
->>>>>>> b114ac3eec8f7c718403be9ddb02f92277f152ef
 .portfolio p {font-size: 18px; margin: 0; line-height: 30px;}
 .portfolio .subhead {font-size: 36px; font-weight: 400; margin-bottom: 80px; line-height: 48px;}
 
@@ -102,7 +98,6 @@ header nav .close {display: none; color: #fff;}
 .portfolio .meta .category {}
 .portfolio .meta .date {margin-left: 40px;}
 
-<<<<<<< HEAD
 .portfolio .text-caption {
 	color: #909090;
     font-size: 14px;
@@ -114,10 +109,6 @@ header nav .close {display: none; color: #fff;}
 
 @media (max-width:769px) {
 	.portfolio p {font-size: 15px; margin: 0; line-height: 26px;}
-=======
-@media (max-width:769px) {
-	.portfolio p {font-size: 14px; margin: 0; line-height: 24px;}
->>>>>>> b114ac3eec8f7c718403be9ddb02f92277f152ef
 	.portfolio .header, .portfolio .img, .portfolio .text {width: 80%; margin-bottom: 80px;}
 	.portfolio .text {margin-bottom: 40px;}
 	.portfolio .subhead {font-size: 24px; font-weight: 400; margin-bottom: 80px; line-height: 35px;}
