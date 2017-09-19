@@ -36,36 +36,24 @@ body {font-family:'Spoqa Han Sans';font-weight:300;-webkit-font-smoothing: antia
 @font-face {font-family: 'Spoqa Han Sans'; font-weight: 100; src: local('Spoqa Han Sans Thin'), url('../font/SpoqaHanSansThin.woff2') format('woff2'), url('../font/SpoqaHanSansThin.woff') format('woff'), url('../font/SpoqaHanSansThin.ttf') format('truetype');}
 
 /* 메뉴 */
-header {width: 96%; position: fixed; top: 0; padding: 2%;}
-header nav:after {content:""; display:block; clear:both;}
-header nav .logo {float: left; cursor: help;}
-header nav .menu-btn, header nav .close {float: right; cursor: pointer;}
-header nav .logo i {font-size: 2em;}
-header nav .menu-btn i, header nav .close i {font-size: 2em;}
-header nav .close {display: none; color: #fff;}
+nav {width: 96%; position: fixed; top: 0; padding: 2%; z-index: 2;}
+nav:after {content:""; display:block; clear:both;}
+nav .logo {float: left; cursor: help;}
+nav .menu-btn, nav .close {float: right; cursor: pointer;}
+nav .logo i {font-size: 2em;}
+nav .menu-btn i, nav .close i {font-size: 2em;}
+nav .close {display: none; color: #fff;}
+
+.menu {position: fixed; width: 100%; height: 100%; z-index: -1;}
+.menu-wrap {display: none; position: fixed; top: 0; flex-direction: column; justify-content: center; text-align: center;}
+.menu-wrap a {word-break: keep-all; font-size: 4em; line-height: 2em; display: block; color: #fff;}
+.show {display: flex;}
 
 /* 메인화면 */
 .hello {display: flex; align-items: center; justify-content: center; text-align: center;}
 .hello p {margin: 0 10%; text-shadow: 3px 3px 1px rgba(0,0,0,0.1); font-size: 2em; line-height: 1.4em;}
-
-.menu {
-	display: none;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.8);	
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-}
-.menu a {
-	word-break: keep-all;
-	font-size: 4em;
-    line-height: 2em;
-	color: #fff;
-}
-.show {display: flex;}
+.resume {font-size: 0.5em; text-decoration: underline;}
+.resume:hover {font-weight: 400;}
 
 /* 작업화면 */
 .portfolio .cover {background-position: center; background-repeat: no-repeat; background-size: cover; height: 35vw; margin-bottom: 160px;display: flex; align-items: center; justify-content: center;}
@@ -79,12 +67,12 @@ header nav .close {display: none; color: #fff;}
 .portfolio h3 {font-size: 32px; font-weight: 700; line-height: 40px; margin: 0 0 40px;}
 .portfolio p {font-size: 18px; margin: 0; line-height: 32px;}
 .portfolio .subhead {font-size: 36px; font-weight: 400; margin-bottom: 80px; line-height: 48px;}
-
+.portfolio .pfss {z-index: -1;}
 
 .portfolio .header, .portfolio .img, .portfolio .text {margin: 0 auto 160px; padding: 0; width: 60%;}
 
 .portfolio .header {
-	margin-top: 160px;
+	padding-top: 160px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -108,6 +96,7 @@ header nav .close {display: none; color: #fff;}
     margin-bottom: 1em;
 }
 
+/* 반응형 */
 @media (max-width:769px) {
 	.portfolio p {font-size: 15px; margin: 0; line-height: 26px;}
 	.portfolio .header, .portfolio .img, .portfolio .text {width: 80%; margin-bottom: 80px;}
@@ -116,4 +105,41 @@ header nav .close {display: none; color: #fff;}
 	.portfolio .cover {margin-bottom: 80px;}
 	.portfolio .cover img {width: 20%;}
 	.menu a {font-size: 3em; line-height: 2em;}
+}
+
+/* 애니메이션 */
+.hello .p {
+  opacity: 0;
+  animation: hello 3s ease forwards;	
+}
+.hello .p:nth-child(3) {
+  animation-duration: 6s;
+}
+@keyframes hello {
+  to {
+  	opacity: 1;
+  }
+}
+
+.come-in {
+  transform: translateY(200px);
+  opacity: 0;
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(2) {
+  animation-duration: 1.0s;
+}
+.come-in:nth-child(3) {
+  animation-duration: 1.2s;
+}
+.already-visible {
+  transform: translateY(0);
+  opacity: 1;
+  animation: none;
+}
+@keyframes come-in {
+  to {
+  	transform: translateY(0);
+  	opacity: 1;
+  }
 }
