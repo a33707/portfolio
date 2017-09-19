@@ -122,8 +122,8 @@ nav .close {display: none; color: #fff;}
 }
 
 .come-in {
-  transform: translateY(200px);
-  opacity: 0;
+  transform: translateY(150px);
+  opacity: 0.5;
   animation: come-in 0.8s ease forwards;
 }
 .come-in:nth-child(2) {
