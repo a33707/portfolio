@@ -82,14 +82,14 @@ $(document).ready(function(){
 	});
 
 	// 이미지팝업
-	$('.image-popup').magnificPopup({
+	$('.pfss > a').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
 		closeBtnInside: false,
 		fixedContentPos: true,
 		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
 		image: {
-			verticalFit: true
+			verticalFit: false
 		},
 		zoom: {
 			enabled: true,
