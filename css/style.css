@@ -59,7 +59,7 @@ nav .close {display: none; color: #fff;}
 /* 작업화면 */
 .portfolio .cover {background-position: center; background-repeat: no-repeat; background-size: cover; height: 35vw; margin-bottom: 160px;display: flex; align-items: center; justify-content: center;}
 .portfolio .cover img {width: 10%;}
-#luxi .cover {background-image: url(/images/luxi/luxi-bg.jpg)}
+#luxi .cover {background-image: url(/images/luxi/luxi-bg.jpg); background-color: #999;}
 #hanintel .cover {background-image: url(/images/hanintel/hanintel-bg.jpg)}
 #thesharp .cover {background-image: url(/images/thesharp/thesharp-bg.jpg)}
 #hyosung .cover {background-image: url(/images/hyosung/hyosung-bg.jpg)}
