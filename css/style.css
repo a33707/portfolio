@@ -53,8 +53,8 @@ nav .close {display: none; color: #fff;}
 /* 메인화면 */
 .hello {display: flex; align-items: center; justify-content: center; text-align: center;}
 .hello p {margin: 0 10%; text-shadow: 3px 3px 1px rgba(0,0,0,0.1); font-size: 2em; line-height: 1.4em;}
-.resume {font-size: 0.5em; text-decoration: underline;}
-.resume:hover {font-weight: 400;}
+.resume {font-size: 0.5em;}
+/*.resume:hover {font-weight: 400;}*/
 
 /* 작업화면 */
 .portfolio .cover {background-position: center; background-repeat: no-repeat; background-size: cover; height: 35vw; margin-bottom: 160px;display: flex; align-items: center; justify-content: center;}
