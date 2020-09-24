@@ -5,6 +5,7 @@ $(document).ready( function() {
     console.log(value);
   });
 
+
 skrollr.init({
 	easing: 'cubic'
 });

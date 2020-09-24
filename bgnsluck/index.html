@@ -12,10 +12,21 @@
 </style>
 </head>
 <body>
+<script type="text/javascript">
+function bottomest() {
+	$(window).scrollTop($(window)[0].scrollHeight)
+};
+function topest() {
+	$(window).scrollTop(0)
+};
+// console.log($('bg_01').prop('scrollHeight'));
+</script>
 
+<button style="position: fixed;" onclick="bottomest()">bottom</button>
+<button style="position: fixed; right: 0;" onclick="topest()">top</button>
 
 	<div class="bg_01" data-4000="background-color:rgb(0,0,0); display:block" data-4800="background-color:rgb(255,255,255); display:none;"></div>
-	<div class="bg_02" data-8199="display:none;" data-8200="opacity:0; display:block;" data-8800="opacity:1;"></div>
+	<div class="bg_02" data-8199="display:none;" data-8200="opacity:0; display:block;" data-8800="opacity:1;" data-10800="opacity:1;" data-11000="opacity:0;"></div>
 
 	<div class="sec_01 wrap_txt" data-1800="top:0px" data-3000="top:-480px">
 		<span class="headline" style="left: calc(50% - 125px);" data-0="opacity:0; top:30px" data-400="opacity:1; top:0px" data-1700="top:0px">똑.</span>
@@ -39,7 +50,7 @@
 		</div>
 		<p class="desc" data-5000="opacity:0;" data-5200="opacity:1;" data-6400="opacity:1;" data-6800="opacity:0;" >우리는 알고 있습니다.<br>흑채가 얼마나 효과가 좋고 장점이 많은지.<br>하지만 얼마나 다루기 어렵고 까다로운지.<br><br>BGNS 멤버들은 탈모로 인해 직접 흑채를 사용하며 생활했기에 경험해 보지 않고는  알 수 없는 장단점과 디테일을 누구보다  잘 알고있습니다. 그리고 그 경험들 속에서  더 나은 흑채의 필요성을 절실히 느꼈습니다.<br><br>그래서 우리는 하기쉽고, 하고싶은 흑채를 만들고자 했습니다.</p>
 	</div>
-	<img src="./images/img_tthc_1.png" class="sec_02 img_tthc_1" data-6400="opacity:0;" data-6800="opacity:1;" data-7600="top:0px;" data-8200="top:-400px;">
+	<img src="./images/img_tthc_1.png" class="sec_02 img_tthc_1" data-6400="opacity:0;" data-6800="opacity:1;" data-7600="top:0px;" data-8200="top:-400px;" data-8800="opacity:1; display:block;" data-9000="opacity:0; display:none;">
 
 	<div class="sec_03 wrap_txt">
 		<p class="headline" data-8600="opacity:0; left: -200px;" data-8800="opacity:1; left: 0px;" data-9600="opacity:1;" data-9800="opacity:0;">준비하시고~</p>
@@ -47,10 +58,107 @@
 	</div>
 	<p class="sec_03 desc" data-9600="opacity:0;" data-9800="opacity:1;" data-10200="top:40px;" data-10400="top:-320px;">흑채를 잘 사용하기 위해서는 요령과 기술이 필요했습니다.<br>그래서 흑채는 어렵고 불편할 수 밖에 없었습니다.<br><br>하지만 이제는 내가 원하는 타이밍, 정확한 위치,<br>연출하고 싶은 느낌과 밀도만큼<br>방아쇠를 손끝으로 똑똑 튕겨주세요.<br><br>똑똑흑채는<br>누구나 똑똑하고 슆게 사용이 가능합니다.</p>
 	<img class="sec_03 img_shoot" src="./images/img_shoot.png" data-9000="bottom:-460px;" data-9200="bottom:0;" data-10200="bottom:0px;" data-10400="bottom:-460px;">
-	<div class="sec_03 container_video" data-10200="height:0%;" data-10400="height:95%;">
+	<div class="sec_03 container_video" data-10200="height:0%;" data-10400="height:95%;" data-10800="height:95%; opacity:1; display:block;" data-11000="height:100%; opacity:0; display:none;">
 		<video autoplay loop muted>
 			<source src="./images/vid_handend.mp4" type="video/mp4">
 		</video>
+	</div>
+
+	<div class="sec_04 wrap_txt"  data-12600="top:100px; opacity:1;" data-13200="top:-318px; opacity:0;">
+		<p class="headline" data-10800="opacity:0; top:30px;" data-11200="opacity:1; top:0px;">Feel 좋은</p >
+		<p class="headline" data-11200="opacity:0; top:136px;" data-11600="opacity:1; top:106px;">필터가</p >
+		<p class="headline" data-11600="opacity:0; top:242px;" data-12000="opacity:1; top:212px;">필요할 터</p >
+	</div>
+	<div class="sec_04 images" data-11600="opacity:0; top:760px" data-12000="opacity:1; top:520px" data-12600="top:520px" data-15600="top:-1800px">
+		<div class="sec_04 img_wrap filter_mesh" data-12000="top: 0px;" data-12600="opacity:0.2" data-12800="opacity: 1;" data-14200="opacity:0">
+			<img src="./images/img_filter_mesh.png">
+			<p class="tit">Mesh Filter</p>
+			<p class="desc">자연스럽고 부드러운 분사와 내구성을 위한<br>스테인리스 메쉬 소재 2차 필터</p>
+		</div>
+		<div class="sec_04 img_wrap filter_hole" data-12000="top: 428px;" data-13000="opacity: 0.2;" data-13500="opacity:1" data-15000="opacity:0">
+			<img src="./images/img_filter_hole.png">
+			<p class="tit">Hole Filter</p>
+			<p class="desc">흑채의 뭉침을 풀어주고 역류를 방지하는<br>ABS 플라스틱 소재 1차 필터</p>
+		</div>
+		<div class="sec_04 img_wrap filter_body" data-12000="top: 815px;" data-13800="opacity:0.2" data-14200="opacity:1">
+			<img src="./images/img_filter_body.png">
+		</div>
+	</div>
+	
+	<p class="sec_05 wrap_txt" data-17800="opacity:1;" data-18200="opacity:0;">
+		<span class="headline" data-15000="opacity:0; top:calc(50% - 54px); left:calc(-130px - -50%);" data-15400="opacity:1; top:calc(50% - 84px);">뭉치지</span>
+		<span class="headline" data-15400="opacity:0; top:calc(50% - 54px); left:calc(130px - -50%);" data-15800="opacity:1; top:calc(50% - 84px);">않아서</span>
+		<span class="headline" data-15800="opacity:0; top:calc(50% - -54px); left:calc(-130px - -50%);" data-16200="opacity:1; top:calc(50% - -24px);">망치지</span>
+		<span class="headline" data-16200="opacity:0; top:calc(50% - -54px); left:calc(130px - -50%);" data-16600="opacity:1; top:calc(50% - -24px);">않아요</span>
+	</p>
+	<p class="sec_05 desc" data-17800="opacity:0;" data-18200="opacity:1;" data-19400="opacity:1;" data-20000="opacity:0;">기존의 흑채들은 정성을 들여 조심스럽게 뿌려도<br>흑채 분말이 뭉쳐서 망치는 경우가 많았어요.<br><br>하지만 똑똑흑채는 방아쇠를 튕겨 발생하는 진동으로 인해<br>카트리지 내부의 흑채 분말이 곱게 부스러지며 필터로 이동하고<br>간격이 넓은 ‘Hole Filter’와 촘촘한 ‘Mesh Filter’를 차례로 거치며<br>더욱 더 고르게 분사됩니다.<br><br>덕분에 뭉침 없이 부드러운 그라데이션 질감으로<br>가볍게 도포 될 수 있다는 사실!</p>
+	<div class="sec_05 img_wrap">
+		<img src="./images/img_filter_test_1.png" data-15800="opacity:0; top:40%;" data-17500="opacity:1; top:20%" data-20400="opacity:0; top:-20%;">
+		<img src="./images/img_filter_test_2.png" data-15800="opacity:0; top:60%;" data-17500="opacity:1; top:80%" data-20400="opacity:0; top:120%;">
+	</div>
+	<div class="sec_05 container_video" data-19600="opacity:0;" data-20200="opacity:1;" data-21000="top:50%;" data-22000="top:-50%;">
+		<video autoplay loop muted>
+			<source src="./images/vid_handend.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="sec_06 wrap_txt" data-21400="top:100%;" data-22600="top:-50%;">
+		<p class="tit">뭘 좋아할지 몰라서<br>다 준비했어요</p>
+		<p class="desc">한국인의 모발에 가장 잘 맞는 다양한 컬러를 준비했습니다.</p>
+	</div>
+	<div class="sec_06 wrap_colors" data-21800="top:100%;" data-22600="top:0%;" data-24400="top:0%;" data-25000="top:-102%;">
+		<div class="colors black" data-22600="height:34vh;" data-23200="height:74vh;" data-23800="height:14vh;" data-24400="height:14vh;" data-25000="height:34vh;">
+			<p class="tit">1.0</p>
+			<p class="desc">내추럴블랙</p>
+		</div>
+		<div class="colors dbrown" data-22600="height:34vh;" data-23200="height:14vh;" data-23800="height:74vh;" data-24400="height:14vh;" data-25000="height:34vh;">
+			<p class="tit">3.0</p>
+			<p class="desc">다크브라운</p>
+		</div>
+		<div class="colors lbrown" data-22600="height:34vh;" data-23200="height:14vh;" data-23800="height:14vh;" data-24400="height:74vh;" data-25000="height:34vh;">
+			<p class="tit">5.0</p>
+			<p class="desc">라이트브라운</p>
+		</div>
+	</div>
+	<div class="sec_06 wrap_txt" data-24400="top:100%;" data-25400="top:4%;" data-26000="top:-50%;">
+		<p class="tit" data-24600="opacity:0;" data-25000="opacity:1">카트리지</p>
+		<p class="tit" data-25000="opacity:0;" data-25400="opacity:1">메킷이지</p>
+	</div>
+	<img class="sec_06 img_cartridge" src="./images/img_cartridge.png" data-25000="opacity:0; top:20%;" data-25400="opacity:1; top:0%;" data-26800="top:-150%;">
+	<div class="sec_06 wrap_txt" data-25600="top:100%;" data-27400="top:-50%;">
+		<p class="desc" data-25400="margin-top:0;">똑똑흑채는 일체형이 아닌 카트리지 교체형 이므로<br>바디에 결합된 카트리지만 교체하면 언제든 새 제품처럼 사용할 수 있습니다.<br><br>슆고 편한 사용을 위해 카트리지의 장착과 교체가 편리하도록 설계되었으며<br>분사 방식의 특징과 카트리지 필터의 구조 덕분에<br>사용상의 낭비를 막을 수 있어 경제적이기도 하죠.</p>
+	</div>
+	<div class="sec_06 wrap_txt" data-26400="top:100%;" data-28600="top:-100%;">
+		<p class="tit" data-26600="opacity:0;" data-27000="opacity:1;">효율성과 경제성 모두</p>
+		<p class="tit" data-27000="opacity:0;" data-27400="opacity:1;">놓치지 않을 거예요.</p>
+	</div>
+	<img class="sec_06 img_filter_half" src="./images/img_filter_half.png" data-26200="top:100%; opacity:0;" data-27600="top:-25%; opacity:1;" data-29000="top:-150%; opacity:1; display:block;" data-29200="display:none;">
+
+	<div class="sec_07 wrap_img" data-28000="top:1000px;" data-32000="top:-3700px;">
+		<img data-28000="opacity:0;" data-29000="opacity:1;" style="width: 468px; left: calc(50% - -70px);" src="./images/img_sketch_1.png">
+		<img data-28400="opacity:0;" data-29400="opacity:1;" style="width: 445px; top: calc(50% - -380px); left: calc(50% - 200px)" src="./images/img_sketch_2.png">
+		<img data-28800="opacity:0;" data-29800="opacity:1;" style="width: 541px; top: calc(50% - -780px); left: calc(50% - -180px)" src="./images/img_sketch_3.png">
+		<img data-30200="opacity:0;" data-31200="opacity:1;" style="width: 550px; top: calc(50% - -1155px); left: calc(50% - 60px)" src="./images/img_sketch_4.png">
+	</div>
+
+
+	<video data-30800="top: 100%" data-31800="top: 0%" data-33000="top: 0%" data-33800="top: -100%;" class="sec_07 container_video" autoplay loop muted>
+		<source src="./images/vid_sketch.mp4" type="video/mp4">
+	</video>
+	<div data-31000="top: 100%" data-32000="top: 13%" data-33000="top: 13%" data-33800="top: -100%;" class="sec_07 wrap_txt">
+		<p class="tit">굳이 왜<br>꿋꿋이?</p>
+		<p class="desc">BGNS 가 똑똑흑채를 개발하는 과정에서 많은 사람들이 물었어요.<br>“기성제품을 판매하면 되는데 굳이 왜?”<br><br>효율적이고 혁신적인 구조를 새롭게 설계하고,<br>고급스럽고 우아한 디자인을 개발하고,<br>더 좋은 소재와 원료를 찾아 연구하고,<br><br>왜 그렇게 힘들게 가느냐는 질문들을 뒤로 하고<br>굳이 어렵고 먼 길을 꿋꿋하게 걸어왔습니다.<br><br>똑똑한 답을 찾아서.</p>
+	</div>
+
+	<div class="sec_08 wrap_txt" data-33600="top:20%;" data-34400="top:20%;" data-35600="top:-50%;">
+		<p class="headline" data-33600="top: 30px; opacity:0;" data-34000="top: 0px; opacity:1;">Cr<span>3+</span></p>
+		<p class="headline" data-33800="top: 136px; opacity:0;" data-34200="top: 106px; opacity:1;">Chromium</p>
+		<p class="headline" data-34000="top: 242px; opacity:0;" data-34400="top: 212px; opacity:1;">Plating</p>
+	</div>
+	<img class="sec_08 img_chrome" src="./images/img_chrome.png" data-34200="top:100%;" data-37400="top:-150%;">
+	<div class="sec_08 wrap_txt" style="left:65%;" data-35500="top:100%;" data-38100="top:-100%;">
+		<p class="desc" data-35800="opacity:0;" data-36400="opacity:1;">쉽게 말해,<br>내구성이 좋고<br>인체에 무해하며<br>주얼리처럼 빛나고<br>거울의 역할도 할만큼<br>표면을 잘 가공했다는 뜻<br>입니다.</p>
+		<p class="desc caption" data-36200="opacity:0; margin-top:-60px;" data-36800="opacity:1; margin-top:40px;">쉿,<br>똑똑흑채의 거울같은 표면에<br>방금 도포한 부분을 비춰볼 수 있어<br>흑채가 원하는 부위에 잘 뿌려졌는지<br>바로 확인할 수 있는 건 비밀 (찡긋)</p>
 	</div>
 
 </body>
