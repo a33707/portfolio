@@ -14,47 +14,47 @@
 <body>
 <script type="text/javascript">
 function bottomest() {
-	$(window).scrollTop($(window)[0].scrollHeight)
+	$(window).scrollTop($(document).height());
 };
 function topest() {
 	$(window).scrollTop(0)
 };
-// console.log($('bg_01').prop('scrollHeight'));
 </script>
-<!-- 
-<button style="position: fixed;" onclick="bottomest()">bottom</button>
-<button style="position: fixed; right: 0;" onclick="topest()">top</button>
- -->
+
+<button style="z-index: 999; position: fixed;" onclick="bottomest()">bottom</button>
+<button style="z-index: 999; position: fixed; right: 0;" onclick="topest()">top</button>
+<a href="https://smartstore.naver.com/bgnsluck" target="_blank" class="btn_goto_shop"><img src="./images/ic_shop.png"></a>
+
 	<div class="bg_01" data-4000="background-color:rgb(0,0,0); display:block" data-4800="background-color:rgb(255,255,255); display:none;"></div>
-	<div class="bg_02" data-8199="display:none;" data-8200="opacity:0; display:block;" data-8800="opacity:1;" data-10800="opacity:1;" data-11000="opacity:0;"></div>
+	<div class="bg_02" data-8199="display:none;" data-8200="opacity:0; display:block;" data-8800="opacity:1;" data-10800="opacity:1; display:block;" data-11000="opacity:0; display:none;"></div>
 
 	<div class="sec_01 wrap_txt" data-1800="top:0px" data-3000="top:-480px">
 		<span class="headline" style="left: calc(50% - 125px);" data-0="opacity:0; top:30px" data-400="opacity:1; top:0px" data-1700="top:0px">똑.</span>
 		<span class="headline" style="left: calc(50% - -125px);" data-150="opacity:0; top:30px" data-550="opacity:1; top:0px" data-1700="top:0px">똑.</span>
 		<p class="desc" data-400="opacity:0; top:340px;" data-1000="opacity:1;" data-1800="top:340px" data-3000="top:280px">선입견, 거부감, 불편함,<br>흑채를 향해 굳게 닫힌 마음을<br>함께 열어 보시겠어요?</p>
 	</div>
-	<div class="sec_01 wrap_img" data-1800="bottom:-280px" data-2600="bottom:100px" data-4000="opacity:1" data-4800="opacity:0">
+	<div class="sec_01 wrap_img" data-1800="bottom:-280px" data-2600="bottom:100px" data-4000="opacity:1; display:block;" data-4800="opacity:0; display:none;">
 		<img class="hc_head" data-2600="bottom:314px" data-4800="bottom:800px" src="./images/img_hc_head.png">
 		<img class="hc_body" src="./images/img_hc_body.png">
 	</div>
 
 	<div class="sec_02 wrap_txt">
-		<p class="headline" data-5600="opacity:0; font-weight:300;" data-5800="opacity:1;" data-7600="top:0px; opacity:1" data-8000="top:-500px; opacity:0;">똑똑하고 슆다</p>
-		<p class="headline" data-4800="opacity:0; top: 30px;" data-4900="opacity:1; top: 0px;" data-5600="opacity:1;" data-5800="opacity:0;">똑똑하고 쉽다</p>
-		<p class="headline" data-4900="opacity:0; top: 165px;" data-5000="opacity:1; top: 135px;" data-5400="top:135px;" data-5600="opacity:1;" data-5800="top:0px; opacity:0;">똑똑하고 싶다</p>
+		<p class="headline" data-5600="opacity:0; font-weight:300;" data-5800="opacity:1;" data-7600="top:0px; opacity:1; display:block;" data-8000="top:-500px; opacity:0; display:none;">똑똑하고 슆다</p>
+		<p class="headline" data-4800="opacity:0; top: 30px;" data-4900="opacity:1; top: 0px;" data-5600="opacity:1; display:block;" data-5800="opacity:0; display:none;">똑똑하고 쉽다</p>
+		<p class="headline" data-4900="opacity:0; top: 165px;" data-5000="opacity:1; top: 135px;" data-5400="top:135px;" data-5600="opacity:1; display:block;" data-5800="top:0px; opacity:0; display:none;">똑똑하고 싶다</p>
 		<div class="sec_02 wrap_txt large">
 			<span class="headline large" data-6000="top:30px; opacity:0; left:calc(50% - 252px);" data-6200="top:0px; opacity:1;" data-7600="top: 0px; opacity:1;" data-8000="top:-400px; opacity:0;">똑</span>
 			<span class="headline large" data-6200="top:30px; opacity:0; left:calc(50% - 88px);" data-6400="top:0px; opacity:1;" data-7600="top: 0px; opacity:1;" data-8000="top:-400px; opacity:0;">똑</span>
 			<span class="headline large" data-6400="top:30px; opacity:0; left:calc(50% - -76px);" data-6600="top:0px; opacity:1;" data-7600="top: 0px; opacity:1;" data-8000="top:-400px; opacity:0;">흑</span>
 			<span class="headline large" data-6600="top:30px; opacity:0; left:calc(50% - -240px);" data-6800="top:0px; opacity:1;" data-7600="top: 0px; opacity:1;" data-8000="top:-400px; opacity:0;">채</span>
 		</div>
-		<p class="desc" data-5000="opacity:0;" data-5200="opacity:1;" data-6400="opacity:1;" data-6800="opacity:0;" >우리는 알고 있습니다.<br>흑채가 얼마나 효과가 좋고 장점이 많은지.<br>하지만 얼마나 다루기 어렵고 까다로운지.<br><br>BGNS 멤버들은 탈모로 인해 직접 흑채를 사용하며 생활했기에 경험해 보지 않고는  알 수 없는 장단점과 디테일을 누구보다  잘 알고있습니다. 그리고 그 경험들 속에서  더 나은 흑채의 필요성을 절실히 느꼈습니다.<br><br>그래서 우리는 하기쉽고, 하고싶은 흑채를 만들고자 했습니다.</p>
+		<p class="desc" data-5000="opacity:0;" data-5200="opacity:1;" data-6400="opacity:1; display:block;" data-6800="opacity:0; display:none;" >우리는 알고 있습니다.<br>흑채가 얼마나 효과가 좋고 장점이 많은지.<br>하지만 얼마나 다루기 어렵고 까다로운지.<br><br>BGNS 멤버들은 탈모로 인해 직접 흑채를 사용하며 생활했기에 경험해 보지 않고는  알 수 없는 장단점과 디테일을 누구보다  잘 알고있습니다. 그리고 그 경험들 속에서  더 나은 흑채의 필요성을 절실히 느꼈습니다.<br><br>그래서 우리는 하기쉽고, 하고싶은 흑채를 만들고자 했습니다.</p>
 	</div>
 	<img src="./images/img_tthc_1.png" class="sec_02 img_tthc_1" data-6400="opacity:0;" data-6800="opacity:1;" data-7600="top:0px;" data-8200="top:-400px;" data-8800="opacity:1; display:block;" data-9000="opacity:0; display:none;">
 
-	<div class="sec_03 wrap_txt">
-		<p class="headline" data-8600="opacity:0; left: -200px;" data-8800="opacity:1; left: 0px;" data-9600="opacity:1;" data-9800="opacity:0;">준비하시고~</p>
-		<p class="headline" data-9000="opacity:0; left[bounce]:100%; top:150px;" data-9400="opacity:1; left[bounce]:0%;" data-9600="opacity:1;" data-9800="opacity:0;">쏘세요</p>
+	<div class="sec_03 wrap_txt" >
+		<p class="headline" data-8600="opacity:0; left: -200px;" data-8800="opacity:1; left: 0px;" data-9600="opacity:1; display:block;" data-9800="opacity:0; display:none;">준비하시고~</p>
+		<p class="headline" data-9000="opacity:0; left[bounce]:100%; top:150px;" data-9400="opacity:1; left[bounce]:0%;" data-9600="opacity:1; display:block;" data-9800="opacity:0; display:none;">쏘세요</p>
 	</div>
 	<p class="sec_03 desc" data-9600="opacity:0;" data-9800="opacity:1;" data-10200="top:40px;" data-10400="top:-320px;">흑채를 잘 사용하기 위해서는 요령과 기술이 필요했습니다.<br>그래서 흑채는 어렵고 불편할 수 밖에 없었습니다.<br><br>하지만 이제는 내가 원하는 타이밍, 정확한 위치,<br>연출하고 싶은 느낌과 밀도만큼<br>방아쇠를 손끝으로 똑똑 튕겨주세요.<br><br>똑똑흑채는<br>누구나 똑똑하고 슆게 사용이 가능합니다.</p>
 	<img class="sec_03 img_shoot" src="./images/img_shoot.png" data-9000="bottom:-460px;" data-9200="bottom:0;" data-10200="bottom:0px;" data-10400="bottom:-460px;">
@@ -85,13 +85,13 @@ function topest() {
 		</div>
 	</div>
 	
-	<p class="sec_05 wrap_txt" data-17800="opacity:1;" data-18200="opacity:0;">
+	<p class="sec_05 wrap_txt" data-17800="opacity:1; display:block;" data-18200="opacity:0; display:none;">
 		<span class="headline" data-15000="opacity:0; top:calc(50% - 54px); left:calc(-130px - -50%);" data-15400="opacity:1; top:calc(50% - 84px);">뭉치지</span>
 		<span class="headline" data-15400="opacity:0; top:calc(50% - 54px); left:calc(130px - -50%);" data-15800="opacity:1; top:calc(50% - 84px);">않아서</span>
 		<span class="headline" data-15800="opacity:0; top:calc(50% - -54px); left:calc(-130px - -50%);" data-16200="opacity:1; top:calc(50% - -24px);">망치지</span>
 		<span class="headline" data-16200="opacity:0; top:calc(50% - -54px); left:calc(130px - -50%);" data-16600="opacity:1; top:calc(50% - -24px);">않아요</span>
 	</p>
-	<p class="sec_05 desc" data-17800="opacity:0;" data-18200="opacity:1;" data-19400="opacity:1;" data-20000="opacity:0;">기존의 흑채들은 정성을 들여 조심스럽게 뿌려도<br>흑채 분말이 뭉쳐서 망치는 경우가 많았어요.<br><br>하지만 똑똑흑채는 방아쇠를 튕겨 발생하는 진동으로 인해<br>카트리지 내부의 흑채 분말이 곱게 부스러지며 필터로 이동하고<br>간격이 넓은 ‘Hole Filter’와 촘촘한 ‘Mesh Filter’를 차례로 거치며<br>더욱 더 고르게 분사됩니다.<br><br>덕분에 뭉침 없이 부드러운 그라데이션 질감으로<br>가볍게 도포 될 수 있다는 사실!</p>
+	<p class="sec_05 desc" data-17800="opacity:0;" data-18200="opacity:1;" data-19400="opacity:1; display:block;" data-20000="opacity:0; display:none;">기존의 흑채들은 정성을 들여 조심스럽게 뿌려도<br>흑채 분말이 뭉쳐서 망치는 경우가 많았어요.<br><br>하지만 똑똑흑채는 방아쇠를 튕겨 발생하는 진동으로 인해<br>카트리지 내부의 흑채 분말이 곱게 부스러지며 필터로 이동하고<br>간격이 넓은 ‘Hole Filter’와 촘촘한 ‘Mesh Filter’를 차례로 거치며<br>더욱 더 고르게 분사됩니다.<br><br>덕분에 뭉침 없이 부드러운 그라데이션 질감으로<br>가볍게 도포 될 수 있다는 사실!</p>
 	<div class="sec_05 img_wrap">
 		<img src="./images/img_filter_test_1.png" data-15800="opacity:0; top:40%;" data-17500="opacity:1; top:20%" data-20400="opacity:0; top:-20%;">
 		<img src="./images/img_filter_test_2.png" data-15800="opacity:0; top:60%;" data-17500="opacity:1; top:80%" data-20400="opacity:0; top:120%;">
@@ -143,12 +143,12 @@ function topest() {
 	<video data-30800="top: 100%" data-31800="top: 0%" data-33000="top: 0%" data-33800="top: -100%;" class="sec_07 container_video" autoplay loop muted>
 		<source src="./images/vid_sketch.mp4" type="video/mp4">
 	</video>
-	<div data-31000="top: 100%" data-32000="top: 13%" data-33000="top: 13%" data-33800="top: -100%;" class="sec_07 wrap_txt">
+	<div data-31000="top: 100%;" data-32000="top: 13%;" data-33000="top: 13%; display:block;" data-33800="top: -100%; display:none;" class="sec_07 wrap_txt">
 		<p class="tit">굳이 왜<br>꿋꿋이?</p>
 		<p class="desc">BGNS 가 똑똑흑채를 개발하는 과정에서 많은 사람들이 물었어요.<br>“기성제품을 판매하면 되는데 굳이 왜?”<br><br>효율적이고 혁신적인 구조를 새롭게 설계하고,<br>고급스럽고 우아한 디자인을 개발하고,<br>더 좋은 소재와 원료를 찾아 연구하고,<br><br>왜 그렇게 힘들게 가느냐는 질문들을 뒤로 하고<br>굳이 어렵고 먼 길을 꿋꿋하게 걸어왔습니다.<br><br>똑똑한 답을 찾아서.</p>
 	</div>
 
-	<div class="sec_07 wrap_txt" style="width: auto; height: 37.5vw; left: 0; right: 0; bottom: auto;" data-33200="top: 100%;" data-35000="top: -100%;">
+	<div class="sec_07 wrap_txt" style="width: auto; height: 37.5vw; left: 0; right: 0; bottom: auto;" data-33200="top: 100%; display:block;" data-35000="top: -100%; display:none;">
 		<div class="sec_07 overlay" data-33200="opacity: 0.1;" data-34800="opacity: 1;"></div>
 		<p class="headline" style="top: calc(50% - 53px); letter-spacing: 6px;" data-33000="opacity: 0;" data-34000="opacity: 1;">8각에서</p>
 		<p class="headline" style="top: calc(50% - -53px)" data-33000="opacity: 0;" data-34000="opacity: 1;">답을찾다</p>
@@ -166,7 +166,7 @@ function topest() {
 		<p class="desc caption" data-37300="opacity:0; margin-top:-60px;" data-37900="opacity:1; margin-top:40px;">쉿,<br>똑똑흑채의 거울같은 표면에<br>방금 도포한 부분을 비춰볼 수 있어<br>흑채가 원하는 부위에 잘 뿌려졌는지<br>바로 확인할 수 있는 건 비밀 (찡긋)</p>
 	</div>
 
-	<img class="sec_09 img_gdesign" src="./images/img_gdesign.png" data-38700="opacity:0;" data-39300="opacity:1;" data-39700="opacity:1; top:calc(50% - 0px);" data-40300="opacity:0; top:calc(50% - 540px);">
+	<img class="sec_09 img_gdesign" src="./images/img_gdesign.png" data-38700="opacity:0;" data-39300="opacity:1;" data-39700="opacity:1; top:calc(50% - 0px); display:block;" data-40300="opacity:0; top:calc(50% - 540px); display:none;">
 	<div class="sec_09 wrap_txt" data-37900="top:calc(50% - -340px);" data-39700="opacity:0; top:calc(50% - -340px);" data-40300="opacity:1; top:calc(50% - 0px); display:block;" data-42700="top:calc(50% - 1400px); display:none;">
 		<p class="headline">유일무이</p>
 		<p class="headline">대체불가</p>
@@ -233,18 +233,18 @@ function topest() {
 	</div>
 </div>
 
-<div class="sec_11 wrap_txt" data-52200="top:100%" data-52800="top:4%" data-54200="opacity:1;" data-54800="opacity:0;">
+<div class="sec_11 wrap_txt" data-52200="top:100%" data-52800="top:4%" data-54200="opacity:1; display:block;" data-54800="opacity:0; display:none;">
 	<p class="headline" data-52400="opacity:0;" data-52600="opacity:1;">볼륨없으면</p>
 	<p class="headline" data-52600="opacity:0;" data-52800="opacity:1;">볼품없으니</p>
 </div>
-<div class="sec_11 wrap_img" data-52200="top:150%" data-52800="top:34%" data-54200="opacity:1;" data-54800="opacity:0;">
-	<div style="width: 100%; height: 100%; position: absolute; left: 0; right: 0; overflow: hidden;"><img style="width: 400px; height: 100%; display: block; background-color: red;" src="./images/img_before.jpeg"></div>
-	<div style="width: 0%; height: 100%; position: absolute; left: 0; right: 0; overflow: hidden; border-right: 1px solid #000;" data-53000="width:0%" data-53800="width:100%"><img style="width: 400px; height: 100%; display: block; background-color: blue;" src="./images/img_after.jpeg"></div>
+<div class="sec_11 wrap_img" data-52200="top:150%" data-52800="top:34%" data-54200="opacity:1; display:block;" data-54800="opacity:0; display:none;">
+	<div style="width: 100%; height: 100%; position: absolute; left: 0; right: 0; overflow: hidden;"><img style="width: 540px; height: 100%; display: block; background-color: red;" src="./images/img_before.jpeg"></div>
+	<div style="width: 0%; height: 100%; position: absolute; left: 0; right: 0; overflow: hidden; border-right: 1px solid #000;" data-53000="width:0%" data-53800="width:100%"><img style="width: 540px; height: 100%; display: block; background-color: blue;" src="./images/img_after.jpeg"></div>
 </div>
-<div class="sec_11 wrap_txt" data-54200="opacity:0; top: 35%; z-index: 2;" data-54800="opacity:1;" data-55200="opacity:1;" data-56000="opacity:0;">
+<div class="sec_11 wrap_txt" data-54200="opacity:0; top: 35%; z-index: 2;" data-54800="opacity:1;" data-55200="opacity:1; display:block;" data-56000="opacity:0; display:none;">
 	<p class="desc">똑똑흑채는 정전기 효과로 모발을 촘촘히 감싸주기 때문에<br>볼륨과 스타일을 잘 살려주고 바람에도 쉽게 날리지 않아요<br>또한 두피에도 볼륨감있게 소복소복 도포되기 때문에<br>볼륨감과 탈모커버를 아우르는 스타일링이 가능하죠.<br><br><span>TIP. 스타일링 후 단단픽서로 마무리하면 든든!</span></p>
 </div>
-<div class="sec_11 bg_03" data-54200="opacity:0;" data-54800="opacity:1;" data-56000="opacity:1;" data-57000="opacity:0;"></div>
+<div class="sec_11 bg_03" data-54200="opacity:0;" data-54800="opacity:1;" data-56000="opacity:1; display:block;" data-57000="opacity:0; display:none;"></div>
 
 <div class="sec_12 wrap_txt" data-58000="display: block;" data-58500="display: none;">
 	<p class="headline" style="left: calc(50% - 61px);" data-56600="top:20px; opacity:0;" data-56800="top:0px; opacity:1;">단단해서</p>
@@ -256,7 +256,7 @@ function topest() {
 		<span style="left: calc(50% - -127px);" data-57400="top:20px; opacity:0;" data-57600="top:0px; opacity:1;">서</span>
 	</p>
 </div>
-<div class="sec_12 wrap_img" data-55200="top: 100%; transform: translate(-50%, 0%); opacity:0;" data-57000="top: 65%; transform: translate(-50%, -50%); opacity:1;" data-58000="top: 65%; transform: translate(-50%, -50%); opacity:1; width: 100%;" data-58600="top: -150%;  opacity:0; width: 250%;">
+<div class="sec_12 wrap_img" data-55200="top: 100%; transform: translate(-50%, 0%); opacity:0;" data-57000="top: 65%; transform: translate(-50%, -50%); opacity:1;" data-58000="top: 65%; transform: translate(-50%, -50%); opacity:1; width: 100%; display:block;" data-58600="top: -150%;  opacity:0; width: 250%; display:none;">
 	<img src="./images/img_ddfx.png">
 </div>
 
@@ -270,23 +270,140 @@ function topest() {
 	<img src="./images/img_fly_hc.png" style="width: 423px; left:calc(50% - 300px)" data-58600="top: calc(50% - 0px); opacity:0;" data-59000="top: calc(50% - 40px); opacity:1;">
 	<img src="./images/img_fly_fx.png" style="width: 306px; left:calc(50% - -260px)" data-59000="top: calc(50% - -100px); opacity:0;" data-59400="top: calc(50% - -60px); opacity:1;">
 </div>
-<video class="sec_14 container_video" autoplay loop muted data-60600="top:100%;" data-61200="top:0%;" data-62000="top:0%;">
+<video class="sec_14 container_video" autoplay loop muted data-60600="top:100%;" data-61200="top:0%;" data-62000="top:0%;" data-65200="top:0%; display: block;" data-65800="top:-120%; display: none;">
 	<source src="./images/vid_likefog.mp4" type="video/mp4">
 </video>
-<div class="sec_14 bg_04" data-62000="opacity:0;" data-62800="opacity:0.7;"></div>
-<div class="sec_14 wrap_txt">
-	<p class="sec_14 headline" style="top:20%;">
+<div class="sec_14 bg_04" data-62000="opacity:0;" data-62800="opacity:0.7;" data-65200="top:0%; display:block;" data-65800="top:-100%; display:none;"></div>
+<div class="sec_14 wrap_txt" data-65200="top:0%; display:block;" data-65800="top:-100%; display:none;">
+	<p class="sec_14 headline" data-65200="top:20%;" data-65800="top:0%;">
 		<span data-62400="opacity:0;" data-63000="opacity:1;">안개같은</span>
 		<span data-62800="opacity:0;" data-63400="opacity:1;">존재감</span>
 	</p>
-	<p class="sec_14 desc" style="top:50%;" data-63400="opacity:0;" data-64000="opacity:1;">픽서는 흑채 스타일링의 화룡점정.<br><br>하지만 픽서액이 펌프에서 무겁게 뿜어지면<br>정성들여 세팅한 헤어스타일을 망치게 되죠.<br><br>단단픽서의 펌프는 안개처럼 미세한 입자로 부드럽고 고르게 분사되어<br>헤어스타일의 자연스러움을 유지하면서도 단단하게 고정해 줍니다.</p>
-	<div class="sec_14 desc caption" style="top:75%;" data-63800="opacity:0;" data-64400="opacity:1;">
+	<p class="sec_14 desc" data-63400="opacity:0;" data-64000="opacity:1;" data-65200="top:50%;" data-65800="top:0%;">픽서는 흑채 스타일링의 화룡점정.<br><br>하지만 픽서액이 펌프에서 무겁게 뿜어지면<br>정성들여 세팅한 헤어스타일을 망치게 되죠.<br><br>단단픽서의 펌프는 안개처럼 미세한 입자로 부드럽고 고르게 분사되어<br>헤어스타일의 자연스러움을 유지하면서도 단단하게 고정해 줍니다.</p>
+	<div class="sec_14 desc caption" data-63800="opacity:0;" data-64400="opacity:1;" data-65200="top:75%;" data-65800="top:0%;">
 		<p class="tit">- 늘 깔끔한 사용을 위한 TIP -</p>
 		<p>사용 전 : 다른곳에 가볍게 1~2회 미리 분사 후 사용</p>
 		<p>사용 후 : 노즐에 남은 픽서액을 닦아낸 후 보관</p>
 	</div>
 </div>
 
+<div class="sec_15 container" data-65400="top: 100%; display:block;" data-68400="top: -175%; display:none;">
+	<div class="sec_15 wrap_txt">
+		<p class="headline">
+			<span data-65800="left:calc(50% - 108px); top: 0px; opacity:1;" data-66200="top:100px; opacity:0;">호</span>
+			<span data-65800="left:calc(50% - 136px); top: -100px; opacity:0;" data-66200="top:0px; opacity:1;" style="transform: scaleX(0.6) translateX(-50%);display: inline-block;">NO</span>
+		</p>
+		<p class="headline" data-0="left:calc(50% - -18px;)">불호</p>
+		<p class="headline">
+			<span data-65800="left:calc(50% - -122px); top: 0px; opacity:1;" data-66200="opacity:0;">?</span>
+			<span data-65800="left:calc(50% - -121px); top: 0px; opacity:0;" data-66200="opacity:1;">!</span>
+		</p>
+	</div>
+	<img class="sec_15 img_everylike" src="./images/img_everylike.png">
+	<p class="sec_15 desc">나에게는 향기로운 향이<br>누군가 에게는 피하고 싶은 향일수도 있습니다.<br><br>향기는 각자의 취향에 따른 호불호가 있어<br>특히 더 민감하고 조심스럽습니다.<br><br>그래서 단단픽서는 개성이 강하고 무거운 향 보다는<br>부드럽고 가벼운 머스크향을 베이스로 조향하여<br>누구나 편안하게 사용할 수 있도록 하였습니다.</p>
+</div>
+
+<div class="sec_16 wrap_txt" data-67600="top:100%;" data-68400="top:6%;" data-68800="top:6%; display:block;" data-69400="top:-50%; display: none;">
+	<p class="headline" data-67600="top: 0px; opacity: 0;" data-68400="opacity: 1;">혼자 두면 예쁘고,</p>
+	<p class="headline" data-68000="top: 106px; opacity: 0;" data-68800="opacity: 1;">함께 두면 아름다운.</p>
+	<p class="desc" data-68200="opacity:0;" data-69000="opacity:1;">꼭꼭 감추고 숨겨질 수 밖에 없었던 흑채,<br>그런데 누가 이것들을 흑채와 픽서라고 생각할 수 있을까요?<br><br>똑똑흑채와 단단픽서는 장식을 위한 오브제로서도 충분합니다.</p>
+</div>
+<img class="sec_16 img_couple" src="./images/img_couple.jpg" data-68000="top:100%;" data-68400="top:60%;" data-68800="top:60%; display:block;" data-70800="top:-100%; display: none;">
+<img class="sec_16 img_gallery" src="./images/img_gallery.png" data-70000="top:100%; display:block;" data-72800="top:-260%; display:none;">
+
+<video class="sec_17 container_video" autoplay loop muted data-72400="top:calc(150% - 30px);" data-73000="top:calc(50% - 30px);"
+data-74000="opacity:1;" data-74100="opacity:0;" data-76400="top:calc(50% - 30px); display:block;" data-77400="top:calc(-50% - 30px); display:none;">
+	<source src="./images/vid_ready.mp4" type="video/mp4">
+</video>
+<video class="sec_17 container_video" autoplay loop muted data-72400="top:calc(150% - 30px);" data-73000="top:calc(50% - 30px);"
+data-74000="opacity:0;" data-74100="opacity:1;" data-75400="opacity:1;" data-75500="opacity:0;" data-76400="top:calc(50% - 30px); display:block;" data-77400="top:calc(-50% - 30px); display:none;">
+	<source src="./images/vid_use.mp4" type="video/mp4">
+</video>
+<video class="sec_17 container_video" autoplay loop muted data-72400="top:calc(150% - 30px);" data-73000="top:calc(50% - 30px);"
+data-75400="opacity:0;" data-75500="opacity:1;" data-76400="top:calc(50% - 30px); display:block;" data-77400="top:calc(-50% - 30px); display:none;">
+	<source src="./images/vid_change.mp4" type="video/mp4">
+</video>
+<div class="sec_17 progress" data-72950="bottom:calc(0% + -30px);" data-73000="bottom:calc(0% + 30px);" data-76400="bottom:calc(0% + 30px); display:block" data-77400="bottom:100% + 30px); display:none;">
+	<p class="tit" style="left: 0%; transform: translateX(0%);"
+	data-74200="opacity:1" data-74700="opacity:0.2">똑똑하게 장착하기</p>
+	<p class="tit"
+	data-74200="opacity:0.2" data-74700="opacity:1" data-75700="opacity:0.2">똑똑하게 사용하기</p>
+	<p class="tit" style="left: 50%; transform: translateX(200%);"
+	data-75200="opacity:0.2" data-75700="opacity:1">똑똑하게 교체하기</p>
+	<div class="bar"><span class="now" data-73200="left:0%;" data-76200="left:85%;"></span></div>
+</div>
+
+<div class="sec_18 buy" data-76800="top:100%; display: block;" data-81800="top:-350%; display: none;">
+	<p class="headline">똑똑하게 구매하기</p>
+	<div class="wrap_set col1">
+		<p class="headline">BEGINNER SET</p>
+		<div class="item">
+			<img src="./images/img_shopbigset.jpg">
+			<p class="tit">비기너스럭 121 세트(GIFT PACKAGE)</p>
+			<p class="price">
+				<span class="sale">99,000원</span>
+				<span class="origin">121,000원</span>
+			</p>
+		</div>
+	</div>
+	<div class="wrap_set col2">
+		<p class="headline">LUCKY SET</p>
+		<div class="item">
+			<img src="./images/img_shop_catset1.jpg">
+			<p class="tit">비기너스럭 똑똑흑채 030 세트</p>
+			<p class="price">
+				<span class="sale">105,000원</span>
+				<span class="origin">150,000원</span>
+			</p>
+		</div>
+		<div class="item" style="margin-left: 5%;">
+			<img src="./images/img_shop_catset2.jpg">
+			<p class="tit">비기너스럭 똑똑흑채 060 세트</p>
+			<p class="price">
+				<span class="sale">198,000원</span>
+				<span class="origin">300,000원</span>
+			</p>
+		</div>
+	</div>
+	<div class="wrap_set col3">
+		<p class="headline">BASIC</p>
+		<div class="item">
+			<img src="./images/img_shop_tthc.jpg">
+			<p class="tit">똑똑흑채 바디</p>
+			<p class="price">
+				<span class="sale">18,000원</span>
+				<span class="origin">25,000원</span>
+			</p>
+		</div>
+		<div class="item" style="margin-left: 5%;">
+			<img src="./images/img_shop_cartridge.jpg">
+			<p class="tit">똑똑흑채 카트리지</p>
+			<p class="price">
+				<span class="sale">38,000원</span>
+				<span class="origin">50,000원</span>
+			</p>
+		</div>
+		<div class="item" style="margin-left: 5%;">
+			<img src="./images/img_shop_ddfx.jpg">
+			<p class="tit">단단픽서</p>
+			<p class="price">
+				<span class="sale">18,000원</span>
+				<span class="origin">25,000원</span>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="sec_19" data-80400="top:100%" data-85400="top:-320%">
+	<img class="img_logo_wecandoit" src="./images/img_logo_wecandoit.png">
+	<img class="img_bottom" src="./images/img_bottom.jpg">
+	<p class="desc">탈모로 인해 가발을 쓰고있는 조상현 대표는 맞춤가발샵’WE CAN :DO IT’을 운영하며<br>SBS 생활의 달인, MBC 마이리틀텔레비젼, KBS 나는 남자다, 채널A 서민갑부 등에 출연함으로서<br>보수적이었던 가발시장에 젊고 창의적이며 긍정적인 에너지를 불어넣고 있습니다.<br><br>조상현 대표는 가발을 쓰기 전 22살 부터 탈모로 인해 흑채를 사용하기 시작했습니다.<br>손재주가 좋은 편임에도 흑채의 사용이 너무 어려워 해결책을 찾아 다방면으로 연구했고,<br>빨래집게를 흑채통에 붙이고 그것을 튕기며 분사하는 쉽고 편한 방법을 고안해 냈습니다.<br>그 덕분에 흑채사용을 훨씬 더 쉽고 편하게 할 수 있었습니다.<br><br>시간이 흘러 가발을 쓰게 되면서 흑채 사용을 더이상 하지 않게 되었지만,<br>15년 뒤, 그 아이디어는 똑똑흑채 개발의 뿌리가 되었습니다.<br><br>자신의 경험과 노하우, 아이디어를 바탕으로 직접 구조설계와 디자인을 하며 제작을 이끌었고<br>그 덕분에 어디에도 없는 독창적이고 효율적인 똑똑흑채를 만들어 낼 수 있었습니다.</p>
+	<img class="img_history" src="./images/img_history.jpg">
+</div>
+
+<div class="footer" data-300-end="bottom: -230px;" data-end="bottom: 0px;">
+	<img src="./images/img_footer.jpeg">
+</div>
 
 </body>
 </html>

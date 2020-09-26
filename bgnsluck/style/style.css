@@ -9,8 +9,15 @@ Noto Sans KR Bold : 700;
 Noto Sans KR Black : 900;
 */
 *{
-	font-family: 'Noto Sans KR','맑은고딕',MalgunGothic,AppleSDGothicNeo-Medium,HelveticaNeue,sans-serif;	
+	font-family: 'Noto Sans KR','맑은고딕',MalgunGothic,AppleSDGothicNeo-Medium,HelveticaNeue,sans-serif;
+	box-sizing: border-box;
 }
+.btn_goto_shop {width: 64px; height: 64px; position: fixed; bottom: 5%; right: 3%; border: 2px solid #eee; border-radius: 100px; background-color: #fff; z-index: 999;
+-webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
+box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
+.btn_goto_shop:hover {border: 2px solid #666;}
+.btn_goto_shop img {width: 32px; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .bg_01,
 .bg_02 {width: 100%; height: 100%; background-color: rgb(0,0,0); z-index: -2;}
 
@@ -125,7 +132,7 @@ Noto Sans KR Black : 900;
     left: 50%;
     right: 0;
     top: 34%;
-    width: 400px;
+    width: 540px;
     height: 540px;
     transform: translateX(-50%);
     /*border-top: 2px solid #000;*/
@@ -155,6 +162,48 @@ Noto Sans KR Black : 900;
 .sec_14.container_video {position: fixed; top: 100%; bottom: 0; left: 0; right: 0; width: 100%; height: auto; background-color: #000;}
 .sec_14.bg_04 {width: 100%; height: 100%; background-color: #000; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 1; opacity: 0;}
 
+.sec_15.container {position: fixed; top: 0; left: 0; right: 0;}
+.sec_15.wrap_txt {position: absolute; top: 80px; left: 0; right: 0;}
+.sec_15.wrap_txt .headline {position: absolute; left: 50%;transform: translateX(-50%);font-size: 90px; line-height: 106px; letter-spacing: 1.5px; font-weight: 700;}
+.sec_15.wrap_txt .headline span {position: absolute; left: 50%; transform: translateX(-50%);}
+.sec_15.img_everylike {width: 720px; display: block; margin: 0 auto;}
+.sec_15.desc {position: absolute; bottom: 25px; left: 0; right: 0; font-size: 22px; line-height: 36px; letter-spacing: -1px; text-align: center;}
+
+.sec_16.wrap_txt {position: fixed; top: 6%; left: 0; right: 0;}
+.sec_16 .headline {position: absolute; top: 0; left: 7%; right: 0;font-size: 90px; line-height: 106px; letter-spacing: 1.5px; font-weight: 700;}
+.sec_16 .desc {position: absolute; top: 260px; left: calc(7% + 10px); right: 0;font-size: 22px; line-height: 36px; letter-spacing: -1px;}
+.sec_16.img_couple {width: 100%; position: fixed; top: 60%; left: 0; right: 0;}
+.sec_16.img_gallery {width: 1120px; position: fixed; top: 0; left: 0; right: 0; margin: 0 auto;}
+
+.sec_17.container_video {width: 75%; position: fixed; top: calc(50% - 30px); left: 50%; transform: translate(-50%, -50%); border:2px solid #000;}
+.sec_17.progress {width: 960px; position: fixed; bottom: 30px; left: 0; right: 0; margin: 0 auto;}
+.sec_17.progress .tit {position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);font-size: 22px; line-height: 36px; letter-spacing: -1px;}
+.sec_17.progress .bar {width: 100%; height: 4px; background-color: #ddd; position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%);}
+.sec_17.progress .bar .now {width: 15%; height: 4px; background-color: #000; position: absolute; left: 0;}
+
+.sec_18.buy {width: 1080px; position: fixed; top: 0; right: 0; left: 0; margin: 0 auto;}
+.sec_18.buy>.headline {font-size: 90px; line-height: 106px; letter-spacing: 1.5px; font-weight: 700; text-align: center;}
+.sec_18.buy .wrap_set:after {clear: both; content: ""; display: block;}
+.sec_18.buy .wrap_set .headline {font-size: 42px; letter-spacing: -1px; font-weight: 700; margin: 120px 0 20px; text-align: center;}
+.sec_18.buy .wrap_set.col1 .item {width: 100%;}
+.sec_18.buy .wrap_set.col2 .item {width: 47.5%;}
+.sec_18.buy .wrap_set.col3 .item {width: 30%;}
+.sec_18.buy .wrap_set .item {border: 1px solid #000; margin: 0 auto; float: left;}
+.sec_18.buy .wrap_set .item:first-child {margin-left: 0;}
+.sec_18.buy .wrap_set .item img {width: 100%; display: block;}
+.sec_18.buy .wrap_set .item .tit {font-size: 22px; line-height: 36px; letter-spacing: -1px; font-weight: 700; margin: 15px 0 0 30px;}
+.sec_18.buy .wrap_set .item .price {margin: 0 0 15px 30px;}
+.sec_18.buy .wrap_set .item .price .sale {font-size: 22px; line-height: 36px; letter-spacing: -1px; font-weight: 700; display: inline-block;}
+.sec_18.buy .wrap_set .item .price .origin {font-size: 18px; letter-spacing: -1px; display: inline-block; text-decoration: line-through; color: #999; font-weight: 300;}
+
+.sec_19 {position: fixed; left: 0; right: 0; top: 0;}
+.sec_19 .desc {font-size: 22px; line-height: 36px; letter-spacing: -1px; text-align: center; margin: 120px auto}
+.sec_19 .img_logo_wecandoit {width: 720px; display: block; margin: 0 auto 120px;}
+.sec_19 .img_bottom {width: 720px; display: block; margin: 0 auto;}
+.sec_19 .img_history {width: 720px; display: block; margin: 0 auto;}
+
+.footer {width: 100%; position: fixed; bottom: 0; left: 0; right: 0; background-color: #ECECEC;}
+.footer img {width: 1080px; display: block; margin: 0 auto;}
 /*.container_filter {position: fixed; left: 0; right: 0; top: 100px}*/
 /*@media (min-width:1920px) {
 	.sec_02 .wrap_txt {top: 180px;}
