@@ -19,11 +19,48 @@ function bottomest() {
 function topest() {
 	$(window).scrollTop(0)
 };
-</script>
+function goto_TTHC() {
+	$(window).scrollTop(6800);
+};
+function goto_CTRG() {
+	$(window).scrollTop(22000);
+};
+function goto_DDFX() {
+	$(window).scrollTop(57600);
+};
 
-<button style="z-index: 999; position: fixed;" onclick="bottomest()">bottom</button>
-<button style="z-index: 999; position: fixed; right: 0;" onclick="topest()">top</button>
+
+$(function(){
+	var FirstScroll = 0;
+	var prevScrollTop = $(window).scrollTop(),
+	tp = $(window).scrollTop();
+	$(window).scroll(function(e){
+		tp = $(this).scrollTop();
+		if ( tp > prevScrollTop ){
+			// $('.menu').animate({top: '-60px'});
+			$('.menu').css('top','-60px');
+		} else if( tp < prevScrollTop ) {
+			// $('.menu').animate({top: '0px'});
+			$('.menu').css('top','0px');
+		}
+		prevScrollTop = tp;
+	});
+});
+
+</script>
+<div class="menu">
+	<button class="img_logo" onclick="topest()"><img class="img_logo" src="./images/img_bgnslogo.png"></button>
+	<div class="wrap">
+		<button class="goto_TTHC" onclick="goto_TTHC()">TTHC</button>
+		<button class="goto_CTRG" onclick="goto_CTRG()">CTRG</button>
+		<button class="goto_DDFX" onclick="goto_DDFX()">DDFX</button>
+	</div>
+</div>
 <a href="https://smartstore.naver.com/bgnsluck" target="_blank" class="btn_goto_shop"><img src="./images/ic_shop.png"></a>
+
+<div class="nav"><span data-0="top:calc(0% - 10px);" data-86400="top:calc(100% - 10px);"></span></div>
+<!-- <button style="z-index: 999; position: fixed;" onclick="bottomest()">bottom</button>
+<button style="z-index: 999; position: fixed; right: 0;" onclick="topest()">top</button> -->
 
 	<div class="bg_01" data-4000="background-color:rgb(0,0,0); display:block" data-4800="background-color:rgb(255,255,255); display:none;"></div>
 	<div class="bg_02" data-8199="display:none;" data-8200="opacity:0; display:block;" data-8800="opacity:1;" data-10800="opacity:1; display:block;" data-11000="opacity:0; display:none;"></div>
@@ -110,14 +147,18 @@ function topest() {
 		<div class="colors black" data-22600="height:34vh;" data-23200="height:74vh;" data-23800="height:14vh;" data-24400="height:14vh;" data-25000="height:34vh;">
 			<p class="tit">1.0</p>
 			<p class="desc">내추럴블랙</p>
+			<img class="img_texture" src="./images/img_nblack.png">
 		</div>
 		<div class="colors dbrown" data-22600="height:34vh;" data-23200="height:14vh;" data-23800="height:74vh;" data-24400="height:14vh;" data-25000="height:34vh;">
-			<p class="tit">3.0</p>
+			<p class="tit" style="color: #F5C125;">3.0</p>
+			<img class="ic_like" src="./images/ic_like.png">
 			<p class="desc">다크브라운</p>
+			<img class="img_texture" src="./images/img_dbrown.png">
 		</div>
 		<div class="colors lbrown" data-22600="height:34vh;" data-23200="height:14vh;" data-23800="height:14vh;" data-24400="height:74vh;" data-25000="height:34vh;">
 			<p class="tit">5.0</p>
 			<p class="desc">라이트브라운</p>
+			<img class="img_texture" src="./images/img_lbrown.png">
 		</div>
 	</div>
 	<div class="sec_06 wrap_txt" data-24400="top:100%;" data-25400="top:4%;" data-26000="top:-50%;">
@@ -175,7 +216,7 @@ function topest() {
 	</div>
 	<img src="./images/img_carousel.png" class="sec_09 img_carousel" data-40700="top:150%;" data-42700="top:50%; left: calc(50% - -2000px);" data-47100="left: calc(50% - 2000px);" data-48600="top:-100%;">
 
-<div class="sec_10 wrap_txt" data-47100="top:100%;" data-48200="top:4%;" data-52100="top:4%" data-52800="top:-100%">
+<div class="sec_10 wrap_txt" data-47100="top:100%;" data-48200="top:4%;" data-52000="top:4%" data-52800="top:-100%">
 	<p class="roll"
 	data-48200="top: calc(50% - -424px);" data-48600="top: calc(50% - -424px);"
 	data-48700="top: calc(50% - -318px);" data-49100="top: calc(50% - -318px);"
@@ -196,41 +237,58 @@ function topest() {
 	</p>
 	<p class="headline">도 <span>똑똑</span>하고 슆다</p>
 </div>
-<div class="sec_10 wrap_img examples" data-47100="top:120%;" data-48200="top:28%;" data-52100="top:28%" data-52800="top:-100%">
-	<p class="caption" style="left: calc(50% - 150px)">똑똑 전</p>
-	<p class="caption" style="left: calc(50% - -150px)">똑똑 후</p>
+<div class="sec_10 wrap_img examples" data-47100="top:120%;" data-48200="top:28%;" data-52000="top:28%" data-52800="top:-100%">
 	<div class="item" data-48200="opacity:1;" data-48600="opacity:1" data-48700="opacity:0;">
 		<img src="./images/img_example_1_b.png" class="before">
+		<img src="./images/ic_next.png" class="ic_next">
 		<img src="./images/img_example_1_a.png" class="after">
 	</div>
 	<div class="item" data-48600="opacity:0" data-48700="opacity:1;" data-49100="opacity:1" data-49200="opacity:0;">
 		<img src="./images/img_example_2_b.png" class="before">
+		<img src="./images/ic_next.png" class="ic_next">
 		<img src="./images/img_example_2_a.png" class="after">
 	</div>
 	<div class="item" data-49100="opacity:0" data-49200="opacity:1;" data-49600="opacity:1" data-49700="opacity:0;">
 		<img src="./images/img_example_3_b.png" class="before">
+		<img src="./images/ic_next.png" class="ic_next">
 		<img src="./images/img_example_3_a.png" class="after">
 	</div>
 	<div class="item" data-49600="opacity:0" data-49700="opacity:1;" data-50100="opacity:1" data-50200="opacity:0;">
 		<img src="./images/img_example_4_b.png" class="before">
+		<img src="./images/ic_next.png" class="ic_next">
 		<img src="./images/img_example_4_a.png" class="after">
 	</div>
 	<div class="item" data-50100="opacity:0" data-50200="opacity:1;" data-50600="opacity:1" data-50700="opacity:0;">
 		<img src="./images/img_example_5_b.png" class="before">
+		<img src="./images/ic_next.png" class="ic_next">
 		<img src="./images/img_example_5_a.png" class="after">
 	</div>
 	<div class="item" data-50600="opacity:0" data-50700="opacity:1;" data-51100="opacity:1" data-51200="opacity:0">
 		<img src="./images/img_example_6_b.png" class="before">
+		<img src="./images/ic_next.png" class="ic_next">
 		<img src="./images/img_example_6_a.png" class="after">
 	</div>
 	<div class="item" data-51100="opacity:0" data-51200="opacity:1;" data-51600="opacity:1" data-51700="opacity:0">
 		<img src="./images/img_example_7_b.png" class="before">
+		<img src="./images/ic_next.png" class="ic_next">
 		<img src="./images/img_example_7_a.png" class="after">
 	</div>
 	<div class="item" data-51600="opacity:0" data-51700="opacity:1;" data-52100="opacity:1">
 		<img src="./images/img_example_8_b.png" class="before">
+		<img src="./images/ic_next.png" class="ic_next">
 		<img src="./images/img_example_8_a.png" class="after">
 	</div>
+</div>
+<div class="sec_10 progress" data-47800="bottom:-60px;" data-48200="bottom:60px;" data-52100="bottom:60px;" data-52300="bottom:-60px;">
+	<span class="dot" style="left: 0;" data-0="background-color:rgb(0,0,0);"></span>
+	<span class="dot" style="left: 101px;" data-48600="background-color:rgb(216,216,216);" data-48700="background-color:rgb(0,0,0);"></span>
+	<span class="dot" style="left: 202px;" data-49100="background-color:rgb(216,216,216);" data-49200="background-color:rgb(0,0,0);"></span>
+	<span class="dot" style="left: 303px;" data-49600="background-color:rgb(216,216,216);" data-49700="background-color:rgb(0,0,0);"></span>
+	<span class="dot" style="left: 404px;" data-50100="background-color:rgb(216,216,216);" data-50200="background-color:rgb(0,0,0);"></span>
+	<span class="dot" style="left: 505px;" data-50600="background-color:rgb(216,216,216);" data-50700="background-color:rgb(0,0,0);"></span>
+	<span class="dot" style="left: 606px;" data-51100="background-color:rgb(216,216,216);" data-51200="background-color:rgb(0,0,0);"></span>
+	<span class="dot" style="right: 0;" data-51600="background-color:rgb(216,216,216);" data-51700="background-color:rgb(0,0,0);"></span>
+	<span class="bar" data-48200="width:0%;" data-51700="width:100%;"></span>
 </div>
 
 <div class="sec_11 wrap_txt" data-52200="top:100%" data-52800="top:4%" data-54200="opacity:1; display:block;" data-54800="opacity:0; display:none;">
@@ -393,8 +451,8 @@ data-75400="opacity:0;" data-75500="opacity:1;" data-76400="top:calc(50% - 30px)
 		</div>
 	</div>
 </div>
-
-<div class="sec_19" data-80400="top:100%" data-85400="top:-320%">
+<img class="img_detail" src="./images/img_detail.jpg" data-80200="top:100%" data-82400="top:-100%">
+<div class="sec_19" data-81600="top:100%" data-86400="top:-320%">
 	<img class="img_logo_wecandoit" src="./images/img_logo_wecandoit.png">
 	<img class="img_bottom" src="./images/img_bottom.jpg">
 	<p class="desc">탈모로 인해 가발을 쓰고있는 조상현 대표는 맞춤가발샵’WE CAN :DO IT’을 운영하며<br>SBS 생활의 달인, MBC 마이리틀텔레비젼, KBS 나는 남자다, 채널A 서민갑부 등에 출연함으로서<br>보수적이었던 가발시장에 젊고 창의적이며 긍정적인 에너지를 불어넣고 있습니다.<br><br>조상현 대표는 가발을 쓰기 전 22살 부터 탈모로 인해 흑채를 사용하기 시작했습니다.<br>손재주가 좋은 편임에도 흑채의 사용이 너무 어려워 해결책을 찾아 다방면으로 연구했고,<br>빨래집게를 흑채통에 붙이고 그것을 튕기며 분사하는 쉽고 편한 방법을 고안해 냈습니다.<br>그 덕분에 흑채사용을 훨씬 더 쉽고 편하게 할 수 있었습니다.<br><br>시간이 흘러 가발을 쓰게 되면서 흑채 사용을 더이상 하지 않게 되었지만,<br>15년 뒤, 그 아이디어는 똑똑흑채 개발의 뿌리가 되었습니다.<br><br>자신의 경험과 노하우, 아이디어를 바탕으로 직접 구조설계와 디자인을 하며 제작을 이끌었고<br>그 덕분에 어디에도 없는 독창적이고 효율적인 똑똑흑채를 만들어 낼 수 있었습니다.</p>

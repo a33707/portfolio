@@ -12,6 +12,18 @@ Noto Sans KR Black : 900;
 	font-family: 'Noto Sans KR','맑은고딕',MalgunGothic,AppleSDGothicNeo-Medium,HelveticaNeue,sans-serif;
 	box-sizing: border-box;
 }
+.menu {position: fixed; top:0; width: 100%; height: 60px; background-color: rgba(0,0,0,0.5); z-index: 999; transition:top 0.3s;}
+.menu .wrap {width: 1080px; display: block; margin: 0 auto;}
+.menu .img_logo {width: 120px; display: block; position: absolute; top: 50%; left: 10%; transform: translate(-50%, -50%); background:none; border: none; cursor: pointer;}
+.menu .wrap .goto_TTHC,.menu .wrap .goto_CTRG,.menu .wrap .goto_DDFX {position: absolute; top: 50%; transform: translate(-50%, -50%); background:none; border: none; font-size: 24px; color: #fff; cursor: pointer; font-weight: 300; opacity: 0.7;padding: 10px 20px;}
+.menu .wrap .goto_TTHC:hover,.menu .wrap .goto_CTRG:hover,.menu .wrap .goto_DDFX:hover {opacity: 1;}
+.menu .wrap .goto_TTHC {left: calc(50% - 400px);}
+.menu .wrap .goto_CTRG {left: calc(50% - 0px);}
+.menu .wrap .goto_DDFX {left: calc(50% - -400px);}
+
+.nav {height: 200px; width: 8px; border-radius: 100px; background-color: rgba(0,0,0,0.5); position: fixed; top: 50%; right: 50px; transform: translateY(-50%); z-index: 999; border:1px solid rgba(255,255,255,0.5);}
+.nav span {width: 4px; height: 10px;background-color: #fff; position: absolute; top: 2px;left: 50%; transform: translateX(-50%); border-radius: 100px;}
+
 .btn_goto_shop {width: 64px; height: 64px; position: fixed; bottom: 5%; right: 3%; border: 2px solid #eee; border-radius: 100px; background-color: #fff; z-index: 999;
 -webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
 -moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
@@ -69,9 +81,11 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .sec_06.wrap_txt .tit {font-size: 90px; line-height: 106px; letter-spacing: 1.5px; font-weight: 700;}
 .sec_06.wrap_txt .desc {font-size: 30px; line-height: 48px; letter-spacing: -1px; margin-top: 60px;}
 .sec_06.wrap_colors {position: fixed; top: 0; left: 0; right: 0;}
-.sec_06.wrap_colors .colors {width: 100%; height: 34vh; text-align: center; position: relative;}
-.sec_06.wrap_colors .colors .tit {font-size: 90px; line-height: 106px; letter-spacing: 1.5px; font-weight: 700; color: #fff; padding-top: 8vh; position: absolute; top: calc(50% - 60px);; left: 50%; transform: translate(-50%, -50%);}
-.sec_06.wrap_colors .colors .desc {font-size: 34px; font-weight: 700; color: #fff; position: absolute; top: calc(50% - -40px);; left: 50%; transform: translate(-50%, -50%);}
+.sec_06.wrap_colors .colors {width: 100%; height: 34vh; text-align: center; position: relative; overflow: hidden; border-top: 2px solid rgba(255,255,255,0.2);}
+.sec_06.wrap_colors .colors .tit {font-size: 90px; line-height: 106px; letter-spacing: 1.5px; font-weight: 700; color: #fff; padding-top: 8vh; position: absolute; top: calc(50% - 60px);; left: 50%; transform: translate(-50%, -50%); z-index: 1;}
+.sec_06.wrap_colors .colors .desc {font-size: 34px; font-weight: 400; color: #fff; position: absolute; top: calc(50% - -40px);; left: 50%; transform: translate(-50%, -50%); z-index: 1;}
+.sec_06.wrap_colors .colors .img_texture {width: 100%; display: block; position: absolute;left: 50%; top: 50%; transform: translate(-50%,-50%); opacity: 0.5;}
+.sec_06.wrap_colors .colors .ic_like {width: 72px; height: 72px; position: absolute; display: block; left: calc(50% - -80px); top: calc(50% - 88px); transform: translate(-50%,-50%); z-index: 1;}
 .sec_06.wrap_colors .colors.black {background-color:#060403;}
 .sec_06.wrap_colors .colors.dbrown {background-color:#160D09;}
 .sec_06.wrap_colors .colors.lbrown {background-color:#2B1B14;}
@@ -118,13 +132,23 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 }
 .sec_10.wrap_txt .headline span {font-weight: 700;}
 .sec_10.wrap_img .caption {position: absolute; top: -24px; left: 50%; transform: translate(-50%, -50%);}
+.sec_10.wrap_img.examples {width: 100%; height: 400px; margin: 0 auto; position: fixed; top: 24%; left: 0; right: 0; background-color: #000; padding: 20px 0;}
+.sec_10.wrap_img.examples .item {width: 100%; height: 360px; position: absolute; opacity: 0;}
+.sec_10.wrap_img.examples .item img {display: block; position: absolute; top: 50%; transform: translate(-50%, -50%);}
+.sec_10.wrap_img.examples .item img.before {float: left; height: 360px; left: calc(50% - 352px);}
+.sec_10.wrap_img.examples .item img.after {float: right; height: 360px; left: calc(50% - -352px);}
+.sec_10.wrap_img.examples .item img.ic_next {width: 72px; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.sec_10.progress {width: 720px; height: 2px; background-color: #D8D8D8; position: fixed; bottom: 60px; left: 0; right: 0; margin: 0 auto;}
+.sec_10.progress .dot {width: 13px; height: 13px; border-radius: 12px; background-color: #D8D8D8; position: absolute; bottom: -6px;}
+.sec_10.progress .bar {width: 0%; height: 2px; background-color: #000; position: absolute; left: 0;}
+/*
 .sec_10.wrap_img.examples {width: 550px; height: 630px; margin: 0 auto; position: fixed; top: 24%; left: 0; right: 0;}
 .sec_10.wrap_img.examples .item {height: 100%; position: absolute; opacity: 0;}
 .sec_10.wrap_img.examples .item:after {clear: both; display: block; content: "";}
-.sec_10.wrap_img.examples .item img {display: block; width: 245px; /*background-color: #000; padding: 0 10px;*/}
+.sec_10.wrap_img.examples .item img {display: block; width: 245px;;}
 .sec_10.wrap_img.examples .item img.before {float: left; margin-right: 30px;}
 .sec_10.wrap_img.examples .item img.after {float: right; margin-left: 30px;}
-
+*/
 .sec_11.wrap_txt {position: fixed; left: 0; right: 0; top: 4%;}
 .sec_11.wrap_txt .headline {font-size: 90px; line-height: 106px; letter-spacing: 1.5px; font-weight: 700; display: block; text-align: center;}
 .sec_11.wrap_img {
@@ -195,6 +219,8 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .sec_18.buy .wrap_set .item .price {margin: 0 0 15px 30px;}
 .sec_18.buy .wrap_set .item .price .sale {font-size: 22px; line-height: 36px; letter-spacing: -1px; font-weight: 700; display: inline-block;}
 .sec_18.buy .wrap_set .item .price .origin {font-size: 18px; letter-spacing: -1px; display: inline-block; text-decoration: line-through; color: #999; font-weight: 300;}
+
+.img_detail {width: 1080px; display: block; margin: 0 auto; position: fixed;left: 0;right: 0;}
 
 .sec_19 {position: fixed; left: 0; right: 0; top: 0;}
 .sec_19 .desc {font-size: 22px; line-height: 36px; letter-spacing: -1px; text-align: center; margin: 120px auto}
