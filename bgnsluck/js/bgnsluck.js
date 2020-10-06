@@ -7,7 +7,11 @@ $(document).ready( function() {
 
 
 skrollr.init({
-	easing: 'cubic'
+	easing: 'cubic',
+	mobileCheck: function(){
+		if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+		// mobile device
+	}}
 });
 
 
