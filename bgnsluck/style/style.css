@@ -420,7 +420,7 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .sec_10.wrap_txt .headline {transform: translate(-44%, calc(-50% - 44px));}
 .sec_10.wrap_txt .headline,
 .sec_10.wrap_txt .roll span {font-size: 42px; line-height: 106px; letter-spacing: -2px;}
-.sec_10.wrap_img.examples {height: 540px;}
+.sec_10.wrap_img.examples {height: 540px; width: 90%;}
 .sec_10.wrap_img.examples .item {height: 500px;}
 .sec_10.wrap_img.examples .item img.before {left: 50%; top: 20%; height: 200px;}
 .sec_10.wrap_img.examples .item img.after {left: 50%; top: 80%; height: 200px;}
