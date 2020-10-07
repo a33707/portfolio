@@ -1,8 +1,10 @@
 $(document).ready( function() {
 
   $(window).scroll(function() {
-    var value = $(this).scrollTop();  //스크롤 수치를 취득
-    console.log(value);
+  	var now =  $(window).scrollTop()
+  	var total = ($(document).height() - $(window).height())
+    console.log('현재 스크롤 위치 : ' + now);
+    // console.log('총 세로 길이 : ' + total);
   });
 
 

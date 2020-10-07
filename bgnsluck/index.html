@@ -15,26 +15,50 @@
 </head>
 <body id="skrollr-body">
 <script type="text/javascript">
-function bottomest() {
-	$(window).scrollTop($(document).height());
-};
-function topest() {
-	$('html').animate( { scrollTop : 0 }, 2000 );
-	// $(window).scrollTop(0)
-};
-function goto_TTHC() {
-	$('html').animate( { scrollTop : 6800 }, 2000 );
-	// $(window).scrollTop(6800);
-};
-function goto_CTRG() {
-	$('html').animate( { scrollTop : 22000 }, 2000 );
-	// $(window).scrollTop(22000);
-};
-function goto_DDFX() {
-	$('html').animate( { scrollTop : 57600 }, 2000 );
-	// $(window).scrollTop(57600);
-};
+// function bottomest() {
+// 	$(window).scrollTop($(document).height());
+// };
+// function topest() {
+// 	$('html').animate( { scrollTop : 0 }, 'slow' );
+// };
+// function goto_TTHC() {
+// 	$('html').animate( { scrollTop : 6800 }, 'slow' );
+// };
+// function goto_CTRG() {
+// 	$('html').animate( { scrollTop : 22000 }, 'slow' );
+// };
+// function goto_DDFX() {
+// 	$('html').animate( { scrollTop : 57600 }, 'slow' );
+// };
 
+$(document).ready( function() {
+	// var now =  $(window).scrollTop()
+	var total = ($(document).height() - $(window).height())
+	// var position_tthc = $(window).scrollTop() / ($(window).scrollTop() - 8600) * 100
+	// var position_ctrg = $(window).scrollTop() / ($(window).scrollTop() - 30200) * 100
+	// var position_ddfx = $(window).scrollTop() / ($(window).scrollTop() - 69200) * 100
+	// var speed = 2000 / 100 * position
+	$('.img_logo').click(function() {
+		$('html').animate( { scrollTop : 0 }, 'slow' );
+		// console.log($(window).scrollTop() / total * 100)
+		// $('html').animate( { scrollTop : 0 }, 4000 / 100 * ($(window).scrollTop() / total * 100) );
+	});
+	$('.goto_TTHC').click(function() {
+		$('html').animate( { scrollTop : 8600 }, 'slow' );
+		// console.log($(window).scrollTop() / (total + 8600) * 100)
+		// $('html').animate( { scrollTop : 8600 }, 4000 / 100 * ($(window).scrollTop() / (total + 8600) * 100) );
+	});
+	$('.goto_CTRG').click(function() {
+		$('html').animate( { scrollTop : 30200 }, 'slow' );
+		// console.log($(window).scrollTop() / (total + 30200) * 100)
+		// $('html').animate( { scrollTop : 30200 }, 4000 / 100 * ($(window).scrollTop() / (total + 30200) * 100) );
+	});
+	$('.goto_DDFX').click(function() {
+		$('html').animate( { scrollTop : 69200 }, 'slow' );
+		// console.log(($(window).scrollTop() / (total + 69200) * 100))
+		// $('html').animate( { scrollTop : 69200 }, 4000 / 100 * ($(window).scrollTop() / (total + 69200) * 100) );
+	});
+});
 
 $(function(){
 	var FirstScroll = 0;
@@ -43,10 +67,8 @@ $(function(){
 	$(window).scroll(function(e){
 		tp = $(this).scrollTop();
 		if ( tp > prevScrollTop ){
-			// $('.menu').animate({top: '-60px'});
 			$('.menu').css('top','-60px');
 		} else if( tp < prevScrollTop ) {
-			// $('.menu').animate({top: '0px'});
 			$('.menu').css('top','0px');
 		}
 		prevScrollTop = tp;
@@ -69,10 +91,10 @@ $(document).ready( function() {
 <!-- <div class="guide"></div> -->
 <div class="menu">
 	<div class="wrap">
-		<button class="img_logo" onclick="topest()"><img class="img_logo" src="./images/img_bgnslogo.png"></button>
-		<button class="goto_TTHC" onclick="goto_TTHC()">TTHC</button>
-		<button class="goto_CTRG" onclick="goto_CTRG()">CTRG</button>
-		<button class="goto_DDFX" onclick="goto_DDFX()">DDFX</button>
+		<button class="img_logo"><img src="./images/img_bgnslogo.png"></button>
+		<button class="goto_TTHC">TTHC</button>
+		<button class="goto_CTRG">CTRG</button>
+		<button class="goto_DDFX">DDFX</button>
 		<a href="https://smartstore.naver.com/bgnsluck" target="_blank" class="goto_shop">SHOP</a>		
 	</div>
 </div>
@@ -99,9 +121,11 @@ $(document).ready( function() {
 	</div>
 
 	<div class="sec_02 wrap_txt">
-		<p class="headline" data-7400="opacity:0; font-weight:300;" data-7600="opacity:1;" data-9200="top:calc(50% - 120px); opacity:1; display:block;" data-9800="top:calc(50% - 360px); opacity:0; display:none;">똑똑하고 슆다</p>
-		<p class="headline" data-6200="opacity:0; top:calc(50% - 120px);" data-6500="opacity:1; top:calc(50% - 120px);" data-7400="opacity:1; display:block;" data-7600="opacity:0; display:none;">똑똑하고 쉽다</p>
-		<p class="headline" data-6500="opacity:0; top:calc(50% - -15px);" data-6800="opacity:1; top:calc(50% - -15px);" data-7200="top:calc(50% - -15px);" data-7400="opacity:1; display:block;" data-7600="top:calc(50% - 120px); opacity:0; display:none;">똑똑하고 싶다</p>
+		<div class="wrap_headline"data-9200="top:50%;" data-9800="top:25%;">
+			<p class="headline" data-7400="opacity:0; font-weight:300;" data-7600="opacity:1; display:block;" data-9200="opacity:1;" data-9800="opacity:0; display:none;">똑똑하고 슆다</p>
+			<p class="headline" data-6200="opacity:0;" data-6500="opacity:1; " data-7400="opacity:1; display:block;" data-7600="opacity:0; display:none;">똑똑하고 쉽다</p>
+			<p class="headline" data-6500="opacity:0;" data-6800="opacity:1; " data-7400="opacity:1; display:block; top:30%;" data-7600="opacity:0; display:none; top:-20%;">똑똑하고 싶다</p>
+		</div>
 		<div class="sec_02 wrap_txt large">
 			<span class="headline large" data-7800="top:30px; opacity:0;" data-8000="top:0px; opacity:1;" data-9200="top: 0px; opacity:1;" data-9800="top:-200px; opacity:0;">똑</span>
 			<span class="headline large" data-8000="top:30px; opacity:0;" data-8200="top:0px; opacity:1;" data-9200="top: 0px; opacity:1;" data-9800="top:-200px; opacity:0;">똑</span>
@@ -122,7 +146,7 @@ $(document).ready( function() {
 		<p class="headline" data-12600="opacity:0; left[bounce]:100%;" data-13000="opacity:1; left[bounce]:0%;" data-13200="opacity:1; display:block;" data-13400="opacity:0; display:none;">쏘세요</p>
 	</div>
 	<p class="sec_03 desc" data-13199="display:none;" data-13200="opacity:0;display:block;" data-13400="opacity:1;" data-13800="top:100px;" data-14000="top:-320px;">흑채를 잘 사용하기 위해서는 요령과 기술이 필요했습니다.<br>그래서 흑채는 어렵고 불편할 수 밖에 없었습니다.<br><br>하지만 이제는 내가 원하는 타이밍, 정확한 위치,<br>연출하고 싶은 느낌과 밀도만큼<br>방아쇠를 손끝으로 똑똑 튕겨주세요.<br><br>똑똑흑채는<br>누구나 똑똑하고 슆게 사용이 가능합니다.</p>
-	<img class="sec_03 img_shoot" src="./images/img_shoot.png" data-12600="bottom:-460px;" data-12800="bottom:-50px;" data-13800="bottom:-50px;" data-14000="bottom:-460px;">
+	<img class="sec_03 img_shoot" src="./images/img_shoot.png" data-12600="bottom:-430px;" data-12800="bottom:0px;" data-13800="bottom:0px;" data-14000="bottom:-430px;">
 	<div class="sec_03 container_video" data-13800="height:0%;" data-14000="height:50%;" data-14400="height:50%; opacity:1; display:block;" data-14600="height:0%; opacity:0; display:none;">
 		<video autoplay loop muted>
 			<source src="./images/vid_handend.mp4" type="video/mp4">
@@ -134,7 +158,7 @@ $(document).ready( function() {
 		<p class="headline" data-15000="opacity:0; top:136px;" data-15400="opacity:1; top:106px;">필터가</p >
 		<p class="headline" data-15400="opacity:0; top:242px;" data-15800="opacity:1; top:212px;">필요할 터</p >
 	</div>
-	<div class="sec_04 images" data-15400="top:1400px" data-20000="top:-1800px">
+	<div class="sec_04 images" data-15399="display:none;" data-15400="top:1400px; display:block;" data-20000="top:-1800px;">
 		<div class="sec_04 img_wrap filter_mesh" data-16600="opacity:0.2" data-16800="opacity: 1;" data-18200="opacity:0">
 			<img src="./images/img_filter_mesh.png">
 			<p class="tit">Mesh Filter</p>
@@ -171,10 +195,10 @@ $(document).ready( function() {
 		<p class="tit long">뭘 좋아할지 몰라서<br>다 준비했어요</p>
 		<p class="desc">한국인의 모발에 가장 잘 맞는 다양한 컬러를 준비했습니다.</p>
 	</div>
-	<div class="sec_06 wrap_colors" data-26000="top:100%;" data-26800="top:0%;" data-29200="top:0%;" data-29800="top:-102%;">
+	<div class="sec_06 wrap_colors" data-26000="top:100%;" data-26800="top:0%;" data-29200="top:0%; display: block;" data-29800="top:-102%; display: none;">
 		<div class="colors black" data-26800="height:34vh;" data-27400="height:50vh;" data-28000="height:25vh;" data-28600="height:25vh;" data-29200="height:34vh;">
 			<p class="tit">1.0</p>
-			<p class="sub">내추럴블랙</p>
+			<p class="sub">네추럴블랙</p>
 			<p class="desc">짙고 어두운 모발 / 염색컬러 흑갈색 계열</p>
 			<img class="img_texture" src="./images/img_nblack.jpeg">
 		</div>
@@ -208,7 +232,7 @@ $(document).ready( function() {
 		<p class="tit long" data-32200="opacity:0;" data-32400="opacity:1;">놓치지 않을 거예요.</p>
 	</div>
 
-	<div class="sec_07 wrap_img" data-32600="top:100%; display:block;" data-33400="top:0%;" data-34200="top:0%;" data-35200="top: -100%; display:none;">
+	<div class="sec_07 wrap_img" data-32600="top:100%; display:block;" data-33400="top:0%;" data-34200="top:0%;" data-35200="top: -100%;" data-35600="display:none;">
 		<img data-33200="opacity:0;" data-33400="opacity:1;" src="./images/img_sketch_1.png">
 		<img data-33400="opacity:0;" data-33600="opacity:1;" src="./images/img_sketch_2.png">
 		<img data-33600="opacity:0;" data-33800="opacity:1;" src="./images/img_sketch_3.png">
@@ -246,30 +270,30 @@ $(document).ready( function() {
 		<p class="headline">똑똑흑채</p>
 		<img src="./images/img_prise.png" class="sec_09 img_prise">
 	</div>
-	<!-- <img src="./images/img_carousel.png" class="sec_09 img_carousel" data-44500="top:150%;" data-46500="top:50%; left: calc(50% - -2000px);" data-50900="left: calc(50% - 2000px);" data-52400="top:-100%;"> -->
-	<div class="sec_09 img_carousel" data-44499="display:none;" data-44500="top:150%;display:block;" data-46500="top:50%; left: calc(50% - -2000px);" data-50900="left: calc(50% - 2000px);" data-52400="top:-100%; display:none;">
+	
+	<div class="sec_09 img_carousel" data-44499="display:none;" data-44500="top:150%;display:block;" data-46500="top:50%; left: 150%;" data-50900="left: -50%;" data-52400="top:-100%; display:none;">
 		<a href="./images/img_carousel_1.png">
-			<img src="./images/img_carousel_1.png" width="800">
+			<img src="./images/img_carousel_1.png">
 		</a>
 		<a href="./images/img_carousel_2.png">
-			<img src="./images/img_carousel_2.png" width="800">
+			<img src="./images/img_carousel_2.png">
 		</a>
 		<a href="./images/img_carousel_3.png">
-			<img src="./images/img_carousel_3.png" width="800">
+			<img src="./images/img_carousel_3.png">
 		</a>
 		<a href="./images/img_carousel_4.png">
-			<img src="./images/img_carousel_4.png" width="800">
+			<img src="./images/img_carousel_4.png">
 		</a>
 		<a href="./images/img_carousel_5.png">
-			<img src="./images/img_carousel_5.png" width="800">
+			<img src="./images/img_carousel_5.png">
 		</a>
 		<a href="./images/img_carousel_6.png">
-			<img src="./images/img_carousel_6.png" width="800">
+			<img src="./images/img_carousel_6.png">
 		</a>
 	</div>
 	
 
-<div class="sec_10 wrap_txt" data-50900="top:110%;" data-52000="top:15%;" data-63600="top:15%" data-64400="top:-80%">
+<div class="sec_10 wrap_txt" data-50900="top:110%;" data-52000="top:15%;" data-63600="top:15%;display:block;" data-64400="top:-80%; display:none;">
 	<p class="roll"
 	data-52600="top: calc(50% - -424px);"
 	data-53400="top: calc(50% - -318px);" data-54200="top: calc(50% - -318px);"
@@ -290,7 +314,7 @@ $(document).ready( function() {
 	</p>
 	<p class="headline">도 <span>똑똑</span>하고 슆다</p>
 </div>
-<div class="sec_10 wrap_img examples" data-50900="top:150%;" data-52000="top:51%;" data-63600="top:51%" data-64400="top:-30%">
+<div class="sec_10 wrap_img examples" data-50900="top:150%;" data-52000="top:51%;" data-63600="top:51%;display:block;" data-64400="top:-30%; display:none;">
 	<div class="item" data-52600="left:50%; opacity:1;" data-53400="left:-50%; opacity:0;">
 		<img src="./images/img_example_1_b.png" class="before">
 		<img src="./images/ic_next.png" class="ic_next">
@@ -332,7 +356,7 @@ $(document).ready( function() {
 		<img src="./images/img_example_8_a.png" class="after">
 	</div>
 </div>
-<div class="sec_10 progress" data-51600="top:110%;" data-52000="top:76%;" data-63600="top:76%;" data-64400="top:-10%;">
+<div class="sec_10 progress" data-51600="top:110%;" data-52000="top:76%;" data-63600="top:76%;display:block;" data-64400="top:-10%; display:none;">
 	<span class="dot" style="background-color:rgb(80,80,80);"></span>
 	<span class="dot" data-52600="background-color:rgb(230,230,230);" data-53400="background-color:rgb(80,80,80);"></span>
 	<span class="dot" data-54200="background-color:rgb(230,230,230);" data-55000="background-color:rgb(80,80,80);"></span>
@@ -423,19 +447,19 @@ $(document).ready( function() {
 
 <div class="sec_16 img_gallery" data-83399="display:none;" data-83400="display:block;" data-85500="display:none;">
 	<div data-83400="top:100%; display:block;" data-85500="top:-150%; display:none;">
-		<a style="top: 0;" href="./images/img_gallery_1.jpg"><img src="./images/img_gallery_1.jpg"></a>
-		<a style="top: 380px;" href="./images/img_gallery_2.jpg"><img src="./images/img_gallery_2.jpg"></a>
-		<a style="top: 760px;" href="./images/img_gallery_3.jpg"><img src="./images/img_gallery_3.jpg"></a>
+		<a href="./images/img_gallery_1.jpg"><img src="./images/img_gallery_1.jpg"></a>
+		<a href="./images/img_gallery_2.jpg"><img src="./images/img_gallery_2.jpg"></a>
+		<a href="./images/img_gallery_3.jpg"><img src="./images/img_gallery_3.jpg"></a>
 	</div>
 	<div data-83400="top:100%; display:block;" data-85500="top:-150%; display:none;">
-		<a style="top: 0;" href="./images/img_gallery_4.jpg"><img src="./images/img_gallery_4.jpg"></a>
-		<a style="top: 380px;" href="./images/img_gallery_5.jpg"><img src="./images/img_gallery_5.jpg"></a>
-		<a style="top: 760px;" href="./images/img_gallery_6.jpg"><img src="./images/img_gallery_6.jpg"></a>
+		<a href="./images/img_gallery_4.jpg"><img src="./images/img_gallery_4.jpg"></a>
+		<a href="./images/img_gallery_5.jpg"><img src="./images/img_gallery_5.jpg"></a>
+		<a href="./images/img_gallery_6.jpg"><img src="./images/img_gallery_6.jpg"></a>
 	</div>
 	<div data-83400="top:100%; display:block;" data-85500="top:-150%; display:none;">
-		<a style="top: 0px;" href="./images/img_gallery_7.jpg"><img src="./images/img_gallery_7.jpg"></a>
-		<a style="top: 380px;" href="./images/img_gallery_8.jpg"><img src="./images/img_gallery_8.jpg"></a>
-		<a style="top: 760px;" href="./images/img_gallery_9.jpg"><img src="./images/img_gallery_9.jpg"></a>
+		<a href="./images/img_gallery_7.jpg"><img src="./images/img_gallery_7.jpg"></a>
+		<a href="./images/img_gallery_8.jpg"><img src="./images/img_gallery_8.jpg"></a>
+		<a href="./images/img_gallery_9.jpg"><img src="./images/img_gallery_9.jpg"></a>
 	</div>
 </div>
 
@@ -534,14 +558,17 @@ data-87800="opacity:0;" data-87900="opacity:1;" data-88800="top:calc(50% - 30px)
 	</div>
 </div>
 
-<div class="sec_19" data-92200="top:1080px" data-96600="top:-2600px">
+<div class="sec_19" data-92199="display:none;" data-92200="top:1080px;display:block;" data-96600="top:-2600px;">
 	<img class="img_logo_wecandoit" src="./images/img_logo_wecandoit.png">
 	<img class="img_bottom" src="./images/img_bottom.jpg">
-	<p class="desc">탈모로 인해 가발을 쓰고있는 조상현 대표는 맞춤가발샵’WE CAN :DO IT’을 운영하며<br>SBS 생활의 달인, MBC 마이리틀텔레비젼, KBS 나는 남자다, 채널A 서민갑부 등에 출연함으로서<br>보수적이었던 가발시장에 젊고 창의적이며 긍정적인 에너지를 불어넣고 있습니다.<br><br>조상현 대표는 가발을 쓰기 전 22살 부터 탈모로 인해 흑채를 사용하기 시작했습니다.<br>손재주가 좋은 편임에도 흑채의 사용이 너무 어려워 해결책을 찾아 다방면으로 연구했고,<br>빨래집게를 흑채통에 붙이고 그것을 튕기며 분사하는 쉽고 편한 방법을 고안해 냈습니다.<br>그 덕분에 흑채사용을 훨씬 더 쉽고 편하게 할 수 있었습니다.<br><br>시간이 흘러 가발을 쓰게 되면서 흑채 사용을 더이상 하지 않게 되었지만,<br>15년 뒤, 그 아이디어는 똑똑흑채 개발의 뿌리가 되었습니다.<br><br>자신의 경험과 노하우, 아이디어를 바탕으로 직접 구조설계와 디자인을 하며 제작을 이끌었고<br>그 덕분에 어디에도 없는 독창적이고 효율적인 똑똑흑채를 만들어 낼 수 있었습니다.</p>
+	<p class="desc">탈모로 인해 가발을 쓰고있는 조상현 대표는 맞춤가발샵’WE CAN :DO IT’을 운영하며<br>SBS 생활의 달인, MBC 마이리틀텔레비젼, KBS 나는 남자다, 채널A 서민갑부 등에 출연함으로서<br>보수적이었던 가발시장에 젊고 창의적이며 긍정적인 에너지를 불어넣고 있습니다.<br><br>조상현 대표는 가발을 쓰기 전 22살 부터 탈모로 인해 흑채를 사용하기 시작했습니다.<br>손재주가 좋은 편임에도 흑채의 사용이 너무 어려워 해결책을 찾아 다방면으로 연구했고,<br class="pc_only">빨래집게를 흑채통에 붙이고 그것을 튕기며 분사하는 쉽고 편한 방법을 고안해 냈습니다.<br class="pc_only">그 덕분에 흑채사용을 훨씬 더 쉽고 편하게 할 수 있었습니다.<br><br>시간이 흘러 가발을 쓰게 되면서 흑채 사용을 더이상 하지 않게 되었지만,<br class="pc_only">15년 뒤, 그 아이디어는 똑똑흑채 개발의 뿌리가 되었습니다.<br><br>자신의 경험과 노하우, 아이디어를 바탕으로 직접 구조설계와 디자인을 하며 제작을 이끌었고<br>그 덕분에 어디에도 없는 독창적이고 효율적인 똑똑흑채를 만들어 낼 수 있었습니다.</p>
 	<img class="img_history" src="./images/img_history.jpg">
 </div>
-<div class="footer" data-96400="bottom: -230px;" data-96600="bottom: 0px;">
+<div class="footer pc_only" data-96400="bottom: -230px;" data-96600="bottom: 0px;">
 	<img src="./images/img_footer.jpeg">
+</div>
+<div class="footer mo_only" data-96000="bottom: -540px;" data-96600="bottom: 0px;">
+	<img src="./images/img_footer_m.png">
 </div>
 
 </body>
