@@ -15,48 +15,24 @@
 </head>
 <body id="skrollr-body">
 <script type="text/javascript">
-// function bottomest() {
-// 	$(window).scrollTop($(document).height());
-// };
-// function topest() {
-// 	$('html').animate( { scrollTop : 0 }, 'slow' );
-// };
-// function goto_TTHC() {
-// 	$('html').animate( { scrollTop : 6800 }, 'slow' );
-// };
-// function goto_CTRG() {
-// 	$('html').animate( { scrollTop : 22000 }, 'slow' );
-// };
-// function goto_DDFX() {
-// 	$('html').animate( { scrollTop : 57600 }, 'slow' );
-// };
-
 $(document).ready( function() {
-	// var now =  $(window).scrollTop()
 	var total = ($(document).height() - $(window).height())
-	// var position_tthc = $(window).scrollTop() / ($(window).scrollTop() - 8600) * 100
-	// var position_ctrg = $(window).scrollTop() / ($(window).scrollTop() - 30200) * 100
-	// var position_ddfx = $(window).scrollTop() / ($(window).scrollTop() - 69200) * 100
-	// var speed = 2000 / 100 * position
+
 	$('.img_logo').click(function() {
-		$('html').animate( { scrollTop : 0 }, 'slow' );
-		// console.log($(window).scrollTop() / total * 100)
-		// $('html').animate( { scrollTop : 0 }, 4000 / 100 * ($(window).scrollTop() / total * 100) );
+		// console.log(12000 / 100 * ($(window).scrollTop() / total * 100))
+		$('html').animate( { scrollTop : 0 }, 12000 / 100 * ($(window).scrollTop() / total * 100) );
 	});
 	$('.goto_TTHC').click(function() {
-		$('html').animate( { scrollTop : 8600 }, 'slow' );
-		// console.log($(window).scrollTop() / (total + 8600) * 100)
-		// $('html').animate( { scrollTop : 8600 }, 4000 / 100 * ($(window).scrollTop() / (total + 8600) * 100) );
+		// console.log(12000 / 100 * (Math.abs(($(window).scrollTop() - 8600) / total * 100)))
+		$('html').animate( { scrollTop : 8600 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 8600) / total * 100)) );
 	});
 	$('.goto_CTRG').click(function() {
-		$('html').animate( { scrollTop : 30200 }, 'slow' );
-		// console.log($(window).scrollTop() / (total + 30200) * 100)
-		// $('html').animate( { scrollTop : 30200 }, 4000 / 100 * ($(window).scrollTop() / (total + 30200) * 100) );
+		// console.log(12000 / 100 * (Math.abs(($(window).scrollTop() - 30200) / total * 100)))
+		$('html').animate( { scrollTop : 30200 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 30200) / total * 100)) );
 	});
 	$('.goto_DDFX').click(function() {
-		$('html').animate( { scrollTop : 69200 }, 'slow' );
-		// console.log(($(window).scrollTop() / (total + 69200) * 100))
-		// $('html').animate( { scrollTop : 69200 }, 4000 / 100 * ($(window).scrollTop() / (total + 69200) * 100) );
+		// console.log(12000 / 100 * (Math.abs(($(window).scrollTop() - 69200) / total * 100)))
+		$('html').animate( { scrollTop : 69200 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 69200) / total * 100)) );
 	});
 });
 
@@ -88,7 +64,7 @@ $(document).ready( function() {
 	$('.goto_shop').mouseleave(function(){$(this).text('SHOP');})
 });
 </script>
-<!-- <div class="guide"></div> -->
+
 <div class="menu">
 	<div class="wrap">
 		<button class="img_logo"><img src="./images/img_bgnslogo.png"></button>
@@ -220,7 +196,7 @@ $(document).ready( function() {
 		<p class="tit" data-29200="opacity:0;" data-29600="opacity:1">카트리지</p>
 		<p class="tit" data-29400="opacity:0;" data-29800="opacity:1">메킷이지</p>
 	</div>
-	<img class="sec_06 img_cartridge" src="./images/img_cartridge.png" data-29200="opacity:0; top:35%; display:block;" data-30200="opacity:1; top:-10%;" data-30800="opacity:1; top:-20%;" data-31600="opacity:-1; top:-60%; display:none;">
+	<img class="sec_06 img_cartridge" src="./images/img_cartridge.jpg" data-29200="opacity:0; top:35%; display:block;" data-30200="opacity:1; top:-10%;" data-30800="opacity:1; top:-20%;" data-31600="opacity:-1; top:-60%; display:none;">
 	<div class="sec_06 wrap_txt" style="transform:translateY(-50%)" data-30799="display:none;" data-30800="opacity:0; top:70%; display:block;" data-31300="opacity:1; top:53%;" data-31800="opacity:1; top:47%; display:block;" data-32300="top:-20%; display:none;">
 		<p class="desc">똑똑흑채는 일체형이 아닌 카트리지 교체형 이므로<br>바디에 결합된 카트리지만 교체하면 언제든 새 제품처럼 사용할 수 있습니다.<br><br>슆고 편한 사용을 위해 카트리지의 장착과 교체가 편리하도록 설계되었으며<br class="pc_only">분사 방식의 특징과 카트리지 필터의 구조 덕분에<br>사용상의 낭비를 막을 수 있어 경제적이기도 하죠.</p>
 	</div>
@@ -257,7 +233,7 @@ $(document).ready( function() {
 		<p class="headline" data-38700="top: 136px; opacity:0;" data-39100="top: 106px; opacity:1;">Chromium</p>
 		<p class="headline" data-38900="top: 242px; opacity:0;" data-39300="top: 212px; opacity:1;">Plating</p>
 	</div>
-	<img class="sec_08 img_chrome" src="./images/img_chrome.png" data-39100="top:100%; display:block;" data-42300="top:-150%; display:none;">
+	<img class="sec_08 img_chrome" src="./images/img_chrome.jpg" data-39100="top:100%; display:block;" data-42300="top:-150%; display:none;">
 	<div class="sec_08 wrap_txt long" data-40500="top:100%;" data-43100="top:-100%;">
 		<p class="desc" data-40700="opacity:0;" data-41300="opacity:1;">쉽게 말해,<br>내구성이 좋고<br>인체에 무해하며<br>주얼리처럼 빛나고<br>거울의 역할도 할만큼<br>표면을 잘 가공했다는 뜻<br>입니다.</p>
 		<p class="desc caption" data-41100="opacity:0; margin-top:-60px;" data-41700="opacity:1; margin-top:40px;">쉿,<br>똑똑흑채의 거울같은 표면에<br>방금 도포한 부분을 비춰볼 수 있어<br>흑채가 원하는 부위에 잘 뿌려졌는지<br>바로 확인할 수 있는 건 비밀 (찡긋)</p>
