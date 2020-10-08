@@ -501,5 +501,6 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .sec_19 .desc {width: 90%; font-size: 16px; line-height: 28px; margin: 60px auto;}
 .sec_19 .img_bottom {width: 200%; transform: translateX(-25%);}
 .sec_19 .img_history {width: 90%;}
+.footer.mo_only {padding-bottom: 10%}
 .footer.mo_only img {width: 100%;}
 };
