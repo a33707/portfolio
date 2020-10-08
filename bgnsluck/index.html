@@ -34,6 +34,16 @@ $(document).ready( function() {
 		// console.log(12000 / 100 * (Math.abs(($(window).scrollTop() - 69200) / total * 100)))
 		$('html').animate( { scrollTop : 69200 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 69200) / total * 100)) );
 	});
+
+	$('.btn_openli').click(function() {		
+		if ($(this).attr('style') == 'transform: rotateZ(0deg);') {
+			$('.btn_openli').css('transform','rotateZ(180deg)');
+			$('.menu').css('height','222px')
+		} else {
+			$('.btn_openli').css('transform','rotateZ(0deg)');
+			$('.menu').css('height','60px')
+		};
+	});
 });
 
 $(function(){
@@ -44,8 +54,12 @@ $(function(){
 		tp = $(this).scrollTop();
 		if ( tp > prevScrollTop ){
 			$('.menu').css('top','-60px');
+			$('.btn_openli').css('transform','rotateZ(0deg)');
+			$('.menu').css('height','60px')
 		} else if( tp < prevScrollTop ) {
 			$('.menu').css('top','0px');
+			$('.btn_openli').css('transform','rotateZ(0deg)');
+			$('.menu').css('height','60px')
 		}
 		prevScrollTop = tp;
 	});
@@ -68,10 +82,11 @@ $(document).ready( function() {
 <div class="menu">
 	<div class="wrap">
 		<button class="img_logo"><img src="./images/img_bgnslogo.png"></button>
+		<button class="btn_openli mo_only" style="transform: rotateZ(0deg);"><img src="./images/ic_chevron.png"></button>
 		<button class="goto_TTHC">TTHC</button>
 		<button class="goto_CTRG">CTRG</button>
 		<button class="goto_DDFX">DDFX</button>
-		<a href="https://smartstore.naver.com/bgnsluck" target="_blank" class="goto_shop">SHOP</a>		
+		<a href="https://smartstore.naver.com/bgnsluck" target="_blank" class="goto_shop">SHOP</a>
 	</div>
 </div>
 <a href="https://smartstore.naver.com/bgnsluck" target="_blank" class="btn_goto_shop"><img src="./images/ic_shop.png"></a>

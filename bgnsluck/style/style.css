@@ -15,6 +15,7 @@ Noto Sans KR Black : 900;
 	word-break: keep-all;
 }
 *:focus {outline:none;-webkit-tap-highlight-color : rgba(0,0,0,0);}
+button {background: none; border: none; padding: 0; margin: 0;}
 .pc_only {display: block !important;}
 .mo_only {display: none !important;}
 .guide {width: 1080px; position: fixed;left: 50%; transform: translateX(-50%); right: 0; top: 0; bottom: 0;background-color: rgba(0,0,0,0.2); z-index: 999999;}
@@ -22,7 +23,7 @@ Noto Sans KR Black : 900;
 	width: 100vw;
 	height: 100vh;
 }
-.menu {position: fixed; top:0; width: 100%; height: 60px; background-color: rgba(0,0,0,0.5); z-index: 999; transition:top 0.3s;}
+.menu {position: fixed; top:0; width: 100%; height: 60px; background-color: rgba(0,0,0,0.5); z-index: 999; transition:top 0.3s, height 0.5s;}
 .menu .wrap {width: 1080px; height: 100%; display: block; margin: 0 auto; position: absolute; left: 50%; transform: translateX(-50%);}
 .menu .wrap:after {clear: both; display: block; content: "";}
 .menu .wrap .goto_TTHC,
@@ -315,12 +316,15 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .pc_only {display: none !important;}
 .mo_only {display: block !important;}
 
-.menu .img_logo {display: none;}
+.menu {overflow: hidden;}
+.menu .wrap .img_logo {width: 130px; height: auto; margin: 17px 20px;}
+.menu .wrap .btn_openli {width: 24px; height: 24px; float: right; margin: 18px 24px; transition: transform 0.5s;}
+.menu .wrap .btn_openli img {width: 100%; display: block;}
 .menu .wrap {width: 100%;}
 .menu .wrap .goto_TTHC,
 .menu .wrap .goto_CTRG,
 .menu .wrap .goto_DDFX,
-.menu .wrap .goto_shop {width: 25%; margin-left: 0;}
+.menu .wrap .goto_shop {width: 100%; margin-left: 0; text-align: left; display: block; margin: 0 0 0 20px; padding: 4px 0;}
 
 .sec_01.wrap_txt .headline {font-size: 120px;}
 .sec_01.wrap_txt .headline:nth-child(1) {left: calc(50% - 75px);}
