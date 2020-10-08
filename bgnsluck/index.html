@@ -24,20 +24,20 @@ $(document).ready( function() {
 	var total = ($(document).height() - $(window).height())
 
 	$('.img_logo').click(function() {
-		// console.log(12000 / 100 * ($(window).scrollTop() / total * 100))
-		$('html').animate( { scrollTop : 0 }, 12000 / 100 * ($(window).scrollTop() / total * 100) );
+		$('html').scrollTop( 0 )
+		// $('html').animate( { scrollTop : 0 }, 12000 / 100 * ($(window).scrollTop() / total * 100) );
 	});
 	$('.goto_TTHC').click(function() {
-		// console.log(12000 / 100 * (Math.abs(($(window).scrollTop() - 8600) / total * 100)))
-		$('html').animate( { scrollTop : 8600 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 8600) / total * 100)) );
+		$('html').scrollTop( 8600 )
+		// $('html').animate( { scrollTop : 8600 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 8600) / total * 100)) );
 	});
 	$('.goto_CTRG').click(function() {
-		// console.log(12000 / 100 * (Math.abs(($(window).scrollTop() - 30200) / total * 100)))
-		$('html').animate( { scrollTop : 30200 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 30200) / total * 100)) );
+		$('html').scrollTop( 30200 )
+		// $('html').animate( { scrollTop : 30200 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 30200) / total * 100)) );
 	});
 	$('.goto_DDFX').click(function() {
-		// console.log(12000 / 100 * (Math.abs(($(window).scrollTop() - 69200) / total * 100)))
-		$('html').animate( { scrollTop : 69200 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 69200) / total * 100)) );
+		$('html').scrollTop( 69200 )
+		// $('html').animate( { scrollTop : 69200 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 69200) / total * 100)) );
 	});
 
 	$('.btn_openli').click(function() {		
@@ -548,15 +548,15 @@ $(document).ready( function() {
 	</div>
 </div>
 
-<div class="sec_19" data-92199="display:none;" data-92200="top:1080px;display:block;" data-96600="top:-2880px;">
+<div class="sec_19" data-92199="display:none;" data-92200="top:1080px;display:block;" data-96600="top:-3150px; display:none;">
 	<img class="img_logo_wecandoit" src="./images/img_logo_wecandoit.png">
 	<img class="img_bottom" src="./images/img_bottom.jpg">
 	<p class="desc">탈모로 인해 가발을 쓰고있는 조상현 대표는 맞춤가발샵<br class="mo_only"> 'WE CAN :DO IT'을 운영하며<br>SBS 생활의 달인, MBC 마이리틀텔레비젼, KBS 나는 남자다, 채널A 서민갑부 등에 출연함으로서<br>보수적이었던 가발시장에 젊고 창의적이며 긍정적인 에너지를 불어넣고 있습니다.<br><br>조상현 대표는 가발을 쓰기 전 22살 부터 탈모로 인해<br class="mo_only"> 흑채를 사용하기 시작했습니다.<br>손재주가 좋은 편임에도 흑채의 사용이 너무 어려워 해결책을 찾아 다방면으로 연구했고,<br class="pc_only">빨래집게를 흑채통에 붙이고 그것을 튕기며 분사하는 쉽고 편한 방법을 고안해 냈습니다.<br class="pc_only">그 덕분에 흑채사용을 훨씬 더 쉽고 편하게 할 수 있었습니다.<br><br>시간이 흘러 가발을 쓰게 되면서 흑채 사용을 더이상<br class="mo_only"> 하지 않게 되었지만,<br class="pc_only"> 15년 뒤, 그 아이디어는<br class="mo_only"> 똑똑흑채 개발의 뿌리가 되었습니다.<br><br>자신의 경험과 노하우, 아이디어를 바탕으로 직접 구조설계와 디자인을 하며 제작을 이끌었고<br>그 덕분에 어디에도 없는 독창적이고 효율적인 똑똑흑채를 만들어 낼 수 있었습니다.</p>
 	<img class="img_history" src="./images/img_history.jpg">
 </div>
-<div class="sec_20 pc_only"><p data-95999="display:none;" data-96000="top:500%; display:block;" data-96600="top:50%;">What's Next?</p></div>
+<div class="sec_20 pc_only"><p data-95999="display:none;" data-96000="top:500%; display:block;" data-96600="top:0%;" data-96800="top:-150%;">What's Next?</p></div>
 <div class="sec_20 mo_only"><p data-95799="display:none;" data-95800="top:400%; display:block;" data-96200="top:50%;" data-96600="top:-250%;">What's Next?</p></div>
-<div class="footer pc_only" data-96300="top: 100%;" data-96600="top: 75%;">
+<div class="footer pc_only" data-96600="top: 100%;" data-96800="top: 75%;">
 	<img src="./images/img_footer.jpeg">
 </div>
 <div class="footer mo_only" data-96300="top: 100%;" data-96600="top: 45%;">
