@@ -1,11 +1,30 @@
 $(document).ready( function() {
 
-  $(window).scroll(function() {
-  	var now =  $(window).scrollTop()
-  	var total = ($(document).height() - $(window).height())
-    console.log('현재 스크롤 : ' + now);
-    // console.log('총 세로 길이 : ' + total);
-  });
+// $('#btn_for_vid_ready').click(function() {
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 85400 && $(window).scrollTop() < 86500) {
+		$('.vid_ready').get(0).play();
+	} else {
+		$('.vid_ready').get(0).pause();
+	};
+	if ($(window).scrollTop() > 86500 && $(window).scrollTop() < 87800) {
+		$('.vid_use').get(0).play();
+	} else {
+		$('.vid_use').get(0).pause();
+	};
+	if ($(window).scrollTop() > 87900 && $(window).scrollTop() < 88800) {
+		$('.vid_change').get(0).play();
+	} else {
+		$('.vid_change').get(0).pause();
+	};
+});
+
+$(window).scroll(function() {
+	var now =  $(window).scrollTop()
+	var total = ($(document).height() - $(window).height())
+  console.log('현재 스크롤 : ' + now);
+  // console.log('총 세로 길이 : ' + total);
+});
 
 
 skrollr.init({
