@@ -24,20 +24,28 @@ $(document).ready( function() {
 	var total = ($(document).height() - $(window).height())
 
 	$('.img_logo').click(function() {
-		$('html').scrollTop( 0 )
-		// $('html').animate( { scrollTop : 0 }, 12000 / 100 * ($(window).scrollTop() / total * 100) );
+		// $('html').scrollTop( 0 )
+		$('html').animate({opacity:'0'}, 150)
+		$('html').animate( { scrollTop : 0 }, 400 / 100 * ($(window).scrollTop() / total * 100) )
+		$('html').animate({opacity:'1'}, 150)
 	});
 	$('.goto_TTHC').click(function() {
-		$('html').scrollTop( 8600 )
-		// $('html').animate( { scrollTop : 8600 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 8600) / total * 100)) );
+		// $('html').scrollTop( 8600 )
+		$('html').animate({opacity:'0'}, 150)
+		$('html').animate( { scrollTop : 8600 }, 400 / 100 * (Math.abs(($(window).scrollTop() - 8600) / total * 100)) );
+		$('html').animate({opacity:'1'}, 150)
 	});
 	$('.goto_CTRG').click(function() {
-		$('html').scrollTop( 30200 )
-		// $('html').animate( { scrollTop : 30200 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 30200) / total * 100)) );
+		// $('html').scrollTop( 30200 )
+		$('html').animate({opacity:'0'}, 150)
+		$('html').animate( { scrollTop : 30200 }, 400 / 100 * (Math.abs(($(window).scrollTop() - 30200) / total * 100)) );
+		$('html').animate({opacity:'1'}, 150)
 	});
 	$('.goto_DDFX').click(function() {
-		$('html').scrollTop( 69200 )
-		// $('html').animate( { scrollTop : 69200 }, 12000 / 100 * (Math.abs(($(window).scrollTop() - 69200) / total * 100)) );
+		// $('html').scrollTop( 69200 )
+		$('html').animate({opacity:'0'}, 150)
+		$('html').animate( { scrollTop : 69200 }, 400 / 100 * (Math.abs(($(window).scrollTop() - 69200) / total * 100)) );
+		$('html').animate({opacity:'1'}, 150)
 	});
 
 	$('.btn_openli').click(function() {		
@@ -83,10 +91,9 @@ $(document).ready( function() {
 	$('.goto_shop').mouseleave(function(){$(this).text('SHOP');})
 });
 </script>
-
 <div class="menu">
 	<div class="wrap">
-		<button class="img_logo"><img src="./images/img_bgnslogo.png"></button>
+		<button class="img_logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWoAAABICAYAAADfy79qAAAACXBIWXMAAC4jAAAuIwF4pT92AAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDYwLCAyMDIwLzA1LzEyLTE2OjA0OjE3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjAtMDktMjdUMTQ6MjE6MDMrMDk6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIwLTA5LTI3VDE0OjI3OjM1KzA5OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIwLTA5LTI3VDE0OjI3OjM1KzA5OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBkZWY0ZGZkLTQ5MzMt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"></button>
 		<button class="btn_openli mo_only" style="transform: rotateZ(0deg);"><img src="./images/ic_chevron.png"></button>
 		<button class="goto_TTHC">TTHC</button>
 		<button class="goto_CTRG">CTRG</button>
@@ -141,7 +148,7 @@ $(document).ready( function() {
 		<p class="headline" data-12200="opacity:0; left: -200px;" data-12400="opacity:1; left: 0px;" data-13200="opacity:1; display:block;" data-13400="opacity:0; display:none;">준비하시고<span></span></p>
 		<p class="headline" data-12600="opacity:0; left[bounce]:100%;" data-13000="opacity:1; left[bounce]:0%;" data-13200="opacity:1; display:block;" data-13400="opacity:0; display:none;">쏘세요</p>
 	</div>
-	<p class="sec_03 desc" data-13199="display:none;" data-13200="opacity:0;display:block;" data-13400="opacity:1;" data-13800="top:100px;" data-14000="top:-320px;">흑채를 잘 사용하기 위해서는 요령과 기술이 필요했습니다.<br>그래서 흑채는 어렵고 불편할 수 밖에 없었습니다.<br><br>하지만 이제는 내가 원하는 타이밍, 정확한 위치,<br>연출하고 싶은 느낌과 밀도만큼<br>방아쇠를 손끝으로 똑똑 튕겨주세요.<br><br>똑똑흑채는<br>누구나 똑똑하고 슆게 사용이 가능합니다.</p>
+	<p class="sec_03 desc" data-13199="display:none;" data-13200="opacity:0; display:block;" data-13400="opacity:1;" data-13800="top:calc(15% - 0px);" data-14000="top:calc(0% - 324px); display:none;">흑채를 잘 사용하기 위해서는 요령과 기술이 필요했습니다.<br>그래서 흑채는 어렵고 불편할 수 밖에 없었습니다.<br><br>하지만 이제는 내가 원하는 타이밍, 정확한 위치,<br>연출하고 싶은 느낌과 밀도만큼<br>방아쇠를 손끝으로 똑똑 튕겨주세요.<br><br>똑똑흑채는<br>누구나 똑똑하고 슆게 사용이 가능합니다.</p>
 	<img class="sec_03 img_shoot" src="./images/img_shoot.png" data-12599="display:none;" data-12600="bottom:-430px; display:block;" data-12800="bottom:0px;" data-13800="bottom:0px;" data-14000="bottom:-430px; display:none;">
 	<div class="sec_03 container_video" data-13800="height:0%;" data-14000="height:50%;" data-14400="height:50%; opacity:1; display:block;" data-14600="height:0%; opacity:0; display:none;">
 		<video playsinline autoplay loop muted>
@@ -149,23 +156,24 @@ $(document).ready( function() {
 		</video>
 	</div>
 
-	<div class="sec_04 wrap_txt" data-14599="display:none;" data-14600="display:block;" data-16000="top:50%; opacity:1;" data-16600="top:35%; opacity:0;">
+	<div class="sec_04 wrap_txt" data-14599="display:none;" data-14600="display:block;" data-15600="top:50%; opacity:1;" data-16400="top:35%; opacity:0;">
 		<p class="headline" data-14600="opacity:0; top:30px;" data-15000="opacity:1; top:0px;">Feel 좋은</p >
 		<p class="headline" data-15000="opacity:0; top:136px;" data-15400="opacity:1; top:106px;">필터가</p >
 		<p class="headline" data-15400="opacity:0; top:242px;" data-15800="opacity:1; top:212px;">필요할 터</p >
 	</div>
-	<div class="sec_04 images" data-15399="display:none;" data-15400="top:1400px; display:block;" data-20000="top:-1800px;">
-		<div class="sec_04 img_wrap filter_mesh" data-16600="opacity:0.2" data-16800="opacity: 1;" data-18200="opacity:0">
+	 
+	<div class="sec_04 images" data-15399="display:none;" data-15400="top:calc(0px + 100vh); display:block;" data-20000="top:calc(-1434px + 0vh); display:none;">
+		<div class="sec_04 img_wrap filter_mesh" data-16200="opacity:0.2" data-16400="opacity: 1;" data-18000="opacity:0">
 			<img src="./images/img_filter_mesh.png">
 			<p class="tit">Mesh Filter</p>
 			<p class="desc">자연스럽고 부드러운 분사와 내구성을 위한<br>스테인리스 메쉬 소재 2차 필터</p>
 		</div>
-		<div class="sec_04 img_wrap filter_hole" data-17000="opacity: 0.2;" data-17500="opacity:1" data-19000="opacity:0">
+		<div class="sec_04 img_wrap filter_hole" data-16800="opacity: 0.2;" data-17300="opacity:1" data-18800="opacity:0">
 			<img src="./images/img_filter_hole.png">
 			<p class="tit">Hole Filter</p>
 			<p class="desc">흑채의 뭉침을 풀어주고 역류를 방지하는<br>ABS 플라스틱 소재 1차 필터</p>
 		</div>
-		<div class="sec_04 img_wrap filter_body" data-17800="opacity:0.2" data-18200="opacity:1">
+		<div class="sec_04 img_wrap filter_body" data-17600="opacity:0.2" data-18000="opacity:1">
 			<img src="./images/img_filter_body.png">
 		</div>
 	</div>
@@ -189,7 +197,7 @@ $(document).ready( function() {
 
 	<div class="sec_06 wrap_txt" data-25600="top:100%;" data-26800="top:-50%;">
 		<p class="tit long">뭘 좋아할지 몰라서<br>다 준비했어요</p>
-		<p class="desc">한국인의 모발에 가장 잘 맞는 다양한 컬러를 준비했습니다.</p>
+		<p class="desc" style="margin-top: 24px;">한국인의 모발에 가장 잘 맞는 다양한 컬러를 준비했습니다.</p>
 	</div>
 	<div class="sec_06 wrap_colors" data-26000="top:100%;" data-26800="top:0%;" data-29200="top:0%; display: block;" data-29800="top:-102%; display: none;">
 		<div class="colors black" data-26800="height:34vh;" data-27400="height:50vh;" data-28000="height:25vh;" data-28600="height:25vh;" data-29200="height:34vh;">
@@ -212,11 +220,11 @@ $(document).ready( function() {
 			<img class="img_texture" src="./images/img_lbrown.jpeg">
 		</div>
 	</div>
-	<div class="sec_06 wrap_txt" data-29199="display:none;" data-29200="top:85%;display:block;" data-30200="top:55%;" data-30800="top:45%; opacity:1;" data-31600="top:0%; opacity:-1;">
+	<div class="sec_06 wrap_txt" data-29199="display:none;" data-29200="top:85%;display:block;" data-30200="top:55%;" data-30800="top:45%; opacity:1;" data-31600="top:0%; opacity:-1; display:none;">
+		<img class="sec_06 img_cartridge" src="./images/img_cartridge.jpg" data-29200="opacity:0; bottom:calc(0% - -0px);" data-30200="opacity:1; bottom:calc(0% - -100px);" data-30800="opacity:1;" data-31600="opacity:-1; bottom:calc(0% - -200px);">
 		<p class="tit" data-29200="opacity:0;" data-29600="opacity:1">카트리지</p>
 		<p class="tit" data-29400="opacity:0;" data-29800="opacity:1">메킷이지</p>
 	</div>
-	<img class="sec_06 img_cartridge" src="./images/img_cartridge.jpg" data-29200="opacity:0; top:35%; display:block;" data-30200="opacity:1; top:-10%;" data-30800="opacity:1; top:-20%;" data-31600="opacity:-1; top:-60%; display:none;">
 	<div class="sec_06 wrap_txt" style="transform:translateY(-50%)" data-30799="display:none;" data-30800="opacity:0; top:70%; display:block;" data-31300="opacity:1; top:53%;" data-31800="opacity:1; top:47%; display:block;" data-32300="top:-20%; display:none;">
 		<p class="desc">똑똑흑채는 일체형이 아닌 카트리지 교체형 이므로<br>바디에 결합된 카트리지만 교체하면 언제든 새 제품처럼 사용할 수 있습니다.<br><br>슆고 편한 사용을 위해 카트리지의 장착과 교체가 편리하도록 설계되었으며<br class="pc_only"> 분사 방식의 특징과 카트리지 필터의 구조 덕분에<br class="pc_only"> 사용상의 낭비를 막을 수 있어 경제적이기도 하죠.</p>
 	</div>
@@ -228,7 +236,7 @@ $(document).ready( function() {
 		<p class="tit long" data-32200="opacity:0;" data-32400="opacity:1;">놓치지 않을 거예요.</p>
 	</div>
 
-	<div class="sec_07 wrap_img" data-32600="top:100%; display:block;" data-33400="top:0%;" data-34200="top:0%;" data-35200="top: -100%;" data-35600="display:none;">
+	<div class="sec_07 wrap_img" data-32600="top:calc(0px + 100vh); display:block;" data-33400="top:calc(-490px + 50vh);" data-34200="top:calc(-490px + 50vh);" data-35200="top:calc(-850px + 0vh);" data-35600="display:none;">
 		<img data-33200="opacity:0;" data-33400="opacity:1;" src="./images/img_sketch_1.png">
 		<img data-33400="opacity:0;" data-33600="opacity:1;" src="./images/img_sketch_2.png">
 		<img data-33600="opacity:0;" data-33800="opacity:1;" src="./images/img_sketch_3.png">
@@ -368,8 +376,8 @@ $(document).ready( function() {
 	<p class="headline" data-64200="opacity:0;" data-64400="opacity:1;">볼품없으니</p>
 </div>
 <div class="sec_11 wrap_img" data-63799="display:none;" data-63800="top:100%; display:block;" data-64400="top:32%" data-65800="opacity:1;" data-66400="opacity:0; display:none;">
-	<div style="width: 100%; height: 100%; position: absolute; left: 0; right: 0; overflow: hidden;"><img style="width: 540px; height: 100%; display: block; background-color: red;" src="./images/img_before.jpeg"></div>
-	<div style="width: 0%; height: 100%; position: absolute; left: 0; right: 0; overflow: hidden; border-right-width: 1px;border-right-style: solid;" data-64600="width:0%; border-right-color:rgba(0,0,0,0);" data-65400="width:100%; border-right-color:rgba(0,0,0,1);"><img style="width: 540px; height: 100%; display: block; background-color: blue;" src="./images/img_after.jpeg"></div>
+	<div style="width: 100%; height: 100%; position: absolute; left: 0; right: 0; overflow: hidden;"><img src="./images/img_before.jpeg"></div>
+	<div style="width: 0%; height: 100%; position: absolute; left: 0; right: 0; overflow: hidden; border-right-width: 1px;border-right-style: solid;" data-64600="width:0%; border-right-color:rgba(0,0,0,0);" data-65400="width:100%; border-right-color:rgba(0,0,0,1);"><img src="./images/img_after.jpeg"></div>
 </div>
 
 <div class="sec_11 wrap_txt" data-65799="display:none;" data-65800="opacity:0; top: 35%; z-index: 2; display:block;" data-66400="opacity:1;" data-66800="opacity:1; display:block;" data-67600="opacity:0; display:none;">
@@ -377,7 +385,7 @@ $(document).ready( function() {
 </div>
 <div class="sec_11 bg_03" data-65799="display:none;" data-65800="opacity:0; display:block;" data-66400="opacity:1;" data-67600="opacity:1; display:block;" data-68600="opacity:0; display:none;"></div>
  
-<div class="sec_12 wrap_txt" data-68199="display: none;" data-68200="display: block;" data-69600="display: block;" data-70100="display: none;">
+<div id="ddfx" class="sec_12 wrap_txt" data-68199="display: none;" data-68200="display: block;" data-69600="display: block;" data-70100="display: none;">
 	<p class="headline" style="left: calc(50% - 61px);" data-68200="top:20px; opacity:0;" data-68400="top:0px; opacity:1;">단단해서</p>
 	<p class="headline" style="left: calc(50% - -112px);" data-68400="top:20px; opacity:0;" data-68600="top:0px; opacity:1;">든든</p>
 	<p class="headline" style="top: 80px;">
@@ -441,41 +449,41 @@ $(document).ready( function() {
 </div>
 <img class="sec_16 img_couple" src="./images/img_couple.jpg" data-80599="display:none; display:block;" data-80600="top:100%;" data-81000="top:60%;" data-81800="top:60%;" data-84000="top:-100%; display: none;">
 
-<div class="sec_16 img_gallery" data-83399="display:none;" data-83400="display:block;" data-85500="display:none;">
-	<div data-83400="top:100%; display:block;" data-85500="top:-150%; display:none;">
+<div class="sec_16 img_gallery" data-82999="display:none;" data-83000="top:100%; display:block;" data-85100="top:-150%; display:none;">
+	<div>
 		<a href="./images/img_gallery_1.jpg"><img src="./images/img_gallery_1.jpg"></a>
 		<a href="./images/img_gallery_2.jpg"><img src="./images/img_gallery_2.jpg"></a>
 		<a href="./images/img_gallery_3.jpg"><img src="./images/img_gallery_3.jpg"></a>
 	</div>
-	<div data-83400="top:100%; display:block;" data-85500="top:-150%; display:none;">
+	<div>
 		<a href="./images/img_gallery_4.jpg"><img src="./images/img_gallery_4.jpg"></a>
 		<a href="./images/img_gallery_5.jpg"><img src="./images/img_gallery_5.jpg"></a>
 		<a href="./images/img_gallery_6.jpg"><img src="./images/img_gallery_6.jpg"></a>
 	</div>
-	<div data-83400="top:100%; display:block;" data-85500="top:-150%; display:none;">
+	<div>
 		<a href="./images/img_gallery_7.jpg"><img src="./images/img_gallery_7.jpg"></a>
 		<a href="./images/img_gallery_8.jpg"><img src="./images/img_gallery_8.jpg"></a>
 		<a href="./images/img_gallery_9.jpg"><img src="./images/img_gallery_9.jpg"></a>
 	</div>
 </div>
 
-<video class="sec_17 container_video vid_ready" playsinline loop muted data-84800="top:calc(150% - 30px);" data-85400="top:calc(50% - 30px);" data-86400="opacity:1;" data-86500="opacity:0;" data-88800="top:calc(50% - 30px); display:block;" data-89800="top:calc(-50% - 30px); display:none;">
+<video class="sec_17 container_video vid_ready" playsinline loop muted data-84200="top:calc(150% - 30px);" data-84800="top:calc(50% - 30px);" data-85800="opacity:1;" data-85900="opacity:0;" data-88200="top:calc(50% - 30px); display:block;" data-89200="top:calc(-50% - 30px); display:none;">
 	<source src="./images/vid_ready.mp4" type="video/mp4">
 </video>
-<video class="sec_17 container_video vid_use" playsinline loop muted data-84800="top:calc(150% - 30px);" data-85400="top:calc(50% - 30px);" data-86400="opacity:0;" data-86500="opacity:1;" data-87800="opacity:1;" data-87900="opacity:0;" data-88800="top:calc(50% - 30px); display:block;" data-89800="top:calc(-50% - 30px); display:none;">
+<video class="sec_17 container_video vid_use" playsinline loop muted data-84200="top:calc(150% - 30px);" data-84800="top:calc(50% - 30px);" data-85800="opacity:0;" data-85900="opacity:1;" data-87200="opacity:1;" data-87300="opacity:0;" data-88200="top:calc(50% - 30px); display:block;" data-89200="top:calc(-50% - 30px); display:none;">
 	<source src="./images/vid_use.mp4" type="video/mp4">
 </video>
-<video class="sec_17 container_video vid_change" playsinline loop muted data-84800="top:calc(150% - 30px);" data-85400="top:calc(50% - 30px);" data-87800="opacity:0;" data-87900="opacity:1;" data-88800="top:calc(50% - 30px); display:block;" data-89800="top:calc(-50% - 30px); display:none;">
+<video class="sec_17 container_video vid_change" playsinline loop muted data-84200="top:calc(150% - 30px);" data-84800="top:calc(50% - 30px);" data-87200="opacity:0;" data-87300="opacity:1;" data-88200="top:calc(50% - 30px); display:block;" data-89200="top:calc(-50% - 30px); display:none;">
 	<source src="./images/vid_change.mp4" type="video/mp4">
 </video>
-<div class="sec_17 progress" data-85349="display:none;" data-85350="bottom:calc(0% + -30px); display:block;" data-85400="bottom:calc(0% + 30px);" data-88800="bottom:calc(0% + 30px); display:block" data-89800="bottom:100% + 30px); display:none;">
-	<p id="btn_for_vid_ready" class="tit" style="left: 0%; transform: translateX(0%);" data-86600="opacity:1" data-87100="opacity:0.2">똑똑하게<br class="mo_only">장착하기</p>
-	<p id="btn_for_vid_use" class="tit" data-86600="opacity:0.2" data-87100="opacity:1" data-88100="opacity:0.2">똑똑하게<br class="mo_only">사용하기</p>
-	<p id="btn_for_vid_change" class="tit" style="left: 50%; transform: translateX(200%);" data-87600="opacity:0.2" data-88100="opacity:1">똑똑하게<br class="mo_only">교체하기</p>
-	<div class="bar"><span class="now" data-85600="left:0%;" data-88600="left:85%;"></span></div>
+<div class="sec_17 progress" data-84749="display:none;" data-84750="bottom:calc(0% + -30px); display:block;" data-84800="bottom:calc(0% + 30px);" data-88200="bottom:calc(0% + 30px); display:block" data-89200="bottom:100% + 30px); display:none;">
+	<p id="btn_for_vid_ready" class="tit" style="left: 0%; transform: translateX(0%);" data-86000="opacity:1" data-86500="opacity:0.2">똑똑하게 <br class="mo_only">장착하기</p>
+	<p id="btn_for_vid_use" class="tit" data-86000="opacity:0.2" data-86500="opacity:1" data-87500="opacity:0.2">똑똑하게 <br class="mo_only">사용하기</p>
+	<p id="btn_for_vid_change" class="tit" style="left: 50%; transform: translateX(200%);" data-87000="opacity:0.2" data-87500="opacity:1">똑똑하게 <br class="mo_only">교체하기</p>
+	<div class="bar"><span class="now" data-85000="left:0%;" data-88000="left:85%;"></span></div>
 </div>
 
-<div class="sec_18 buy" data-89199="display: none;" data-89200="top:100%; display: block;" data-94200="top:-350%; display: none;">
+<div class="sec_18 buy" data-88599="display: none;" data-88600="top:calc(0px + 100vh); display: block;" data-92600="top:calc(-2407px + 0vh); display: none;">
 	<p class="headline">똑똑하게 구매하기</p>
 	<div class="wrap_set col1">
 		<p class="headline">BEGINNER SET</p>
@@ -485,7 +493,7 @@ $(document).ready( function() {
 				<p class="tit">비기너스럭 121 세트(GIFT PACKAGE)</p>
 				<p class="price">
 					<span class="sale">99,000원</span>
-					<span class="origin">121,000원</span>
+					<span class="origin">150,000원</span>
 				</p>
 			</a>
 		</div>
@@ -548,20 +556,17 @@ $(document).ready( function() {
 	</div>
 </div>
 
-<div class="sec_19" data-92199="display:none;" data-92200="top:1080px;display:block;" data-96600="top:-3150px; display:none;">
+<div class="sec_19" data-91599="display:none;" data-91800="top:calc(0px + 100vh);display:block;" data-96800="top:calc(-3142px + 0vh); display:none;">
 	<img class="img_logo_wecandoit" src="./images/img_logo_wecandoit.png">
 	<img class="img_bottom" src="./images/img_bottom.jpg">
 	<p class="desc">탈모로 인해 가발을 쓰고있는 조상현 대표는 맞춤가발샵<br class="mo_only"> 'WE CAN :DO IT'을 운영하며<br>SBS 생활의 달인, MBC 마이리틀텔레비젼, KBS 나는 남자다, 채널A 서민갑부 등에 출연함으로서<br>보수적이었던 가발시장에 젊고 창의적이며 긍정적인 에너지를 불어넣고 있습니다.<br><br>조상현 대표는 가발을 쓰기 전 22살 부터 탈모로 인해<br class="mo_only"> 흑채를 사용하기 시작했습니다.<br>손재주가 좋은 편임에도 흑채의 사용이 너무 어려워 해결책을 찾아 다방면으로 연구했고,<br class="pc_only">빨래집게를 흑채통에 붙이고 그것을 튕기며 분사하는 쉽고 편한 방법을 고안해 냈습니다.<br class="pc_only">그 덕분에 흑채사용을 훨씬 더 쉽고 편하게 할 수 있었습니다.<br><br>시간이 흘러 가발을 쓰게 되면서 흑채 사용을 더이상<br class="mo_only"> 하지 않게 되었지만,<br class="pc_only"> 15년 뒤, 그 아이디어는<br class="mo_only"> 똑똑흑채 개발의 뿌리가 되었습니다.<br><br>자신의 경험과 노하우, 아이디어를 바탕으로 직접 구조설계와 디자인을 하며 제작을 이끌었고<br>그 덕분에 어디에도 없는 독창적이고 효율적인 똑똑흑채를 만들어 낼 수 있었습니다.</p>
 	<img class="img_history" src="./images/img_history.jpg">
 </div>
-<div class="sec_20 pc_only"><p data-95999="display:none;" data-96000="top:500%; display:block;" data-96600="top:0%;" data-96800="top:-150%;">What's Next?</p></div>
-<div class="sec_20 mo_only"><p data-95799="display:none;" data-95800="top:400%; display:block;" data-96200="top:50%;" data-96600="top:-250%;">What's Next?</p></div>
-<div class="footer pc_only" data-96600="top: 100%;" data-96800="top: 75%;">
-	<img src="./images/img_footer.jpeg">
-</div>
-<div class="footer mo_only" data-96300="top: 100%;" data-96600="top: 45%;">
-	<img src="./images/img_footer_m.png">
-</div>
+
+<div class="sec_20" data-96199="display:none;" data-96200="display:block;"><p class="pc_only" data-96200="top:calc(0px + 100vh);" data-97000="top:calc(-106px + 40vh);">What's Next?</p></div>
+<div class="sec_20"><p class="mo_only" data-95000="top:calc(0px + 100vh);" data-96000="top:calc(-106px + 30vh);">What's Next?</p></div>
+<div class="footer pc_only" data-96800="top: 100%;" data-97000="top: 75%;"><img src="./images/img_footer.jpeg"></div>
+<div class="footer mo_only" data-95600="top: 100%;" data-96000="top: 45%;"><img src="./images/img_footer_m.png"></div>
 
 </body>
 </html>
