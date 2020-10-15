@@ -329,7 +329,7 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .menu .wrap .goto_CTRG,
 .menu .wrap .goto_DDFX,
 .menu .wrap .goto_shop {margin-left: 122px;}
-.sec_07.wrap_txt {width: 960px;}
+.sec_07.wrap_txt {width: 960px; transform: translate(-50%, -45%);}
 .sec_08.wrap_txt {width: 960px;}
 .sec_08.img_chrome {width: 125%; left: 50%; transform: translateX(-50%);}
 .sec_09.img_carousel {width: 1930px;}
