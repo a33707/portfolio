@@ -366,6 +366,11 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .sec_03.desc {transform: translateY(25%);}
 .sec_03.wrap_txt .headline {transform: translateY(50%);}
 .sec_06.wrap_colors .colors .img_texture {width: 160%;}
+.sec_06.wrap_txt .tit.long {font-size: 82px; letter-spacing: -1.5px;}
+.sec_07.wrap_img img:nth-child(1) {width: 350px;top: calc(50% - 120px);right: 105px;}
+.sec_07.wrap_img img:nth-child(2) {width: 295px;top: calc(50% - -154px);right: 236px;z-index: -1;}
+.sec_07.wrap_img img:nth-child(3) {width: 355px;top: calc(50% - -407px);right: 98px;z-index: -1;}
+.sec_07.wrap_img img:nth-child(4) {width: 413px;top: calc(50% - -674px);right: 116px;}
 .sec_08.img_chrome {width: 175%;}
 .sec_08.wrap_txt {transform: translate(-50%, 120px);}
 .sec_08.wrap_txt.long {width: auto; transform: translate(-50%, -320px);}
@@ -389,11 +394,16 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 
 /* 아이패드 세로 */
 @media (max-width: 768px) and (orientation: portrait) {
+.ipd_no {display: none !important;}
 .menu .wrap {width: 720px;}
 .menu .wrap .goto_TTHC,
 .menu .wrap .goto_CTRG,
 .menu .wrap .goto_DDFX,
 .menu .wrap .goto_shop {margin-left: 62px;}
+.sec_07.wrap_img img:nth-child(1) {width: 290px;top: calc(50% - -30px);right: 164px;}
+.sec_07.wrap_img img:nth-child(2) {width: 275px;top: calc(50% - -251px);right: 248px;}
+.sec_07.wrap_img img:nth-child(3) {width: 295px;top: calc(50% - -484px);right: 161px;z-index: -1;}
+.sec_07.wrap_img img:nth-child(4) {width: 353px;top: calc(50% - -704px);right: 154px;}
 .sec_07.wrap_txt {width: 720px;}
 .sec_08.wrap_txt {width: 720px;}
 .sec_10.wrap_txt .headline {left: calc(50% - 18px);}
@@ -425,6 +435,7 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 
 /* 모바일 */
 @media (max-width:640px) {
+.ipd_no {display: block !important;}
 .pc_only {display: none !important;}
 .mo_only {display: block !important;}
 
