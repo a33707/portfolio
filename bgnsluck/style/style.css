@@ -121,7 +121,7 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .sec_06.wrap_txt {text-align: center; position: fixed; top: 0; left: 0; right: 0;}
 .sec_06.wrap_txt .tit {font-size: 90px; line-height: 106px; letter-spacing: 1.5px; font-weight: 700;}
 .sec_06.wrap_txt.half .tit.long {color: #fff;}
-.sec_06.wrap_txt .tit.long {font-weight: 300; letter-spacing: -2px;}
+.sec_06.wrap_txt .tit.long {font-weight: 700; letter-spacing: -2px;}
 .sec_06.wrap_txt .desc {font-size: 22px; line-height: 36px; letter-spacing: -1px;}
 .sec_06.wrap_colors {position: fixed; top: 0; left: 0; right: 0; z-index: 1;}
 .sec_06.wrap_colors .colors {width: 100%; height: 34vh; text-align: left; position: relative; overflow: hidden; border-top: 2px solid rgba(255,255,255,0.2);}

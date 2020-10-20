@@ -2,17 +2,17 @@ $(document).ready( function() {
 
 // $('#btn_for_vid_ready').click(function() {
 $(window).scroll(function() {
-	if ($(window).scrollTop() > 84800 && $(window).scrollTop() < 85900) {
+	if ($(window).scrollTop() > 88800 && $(window).scrollTop() < 89900) {
 		$('.vid_ready').get(0).play();
 	} else {
 		$('.vid_ready').get(0).pause();
 	};
-	if ($(window).scrollTop() > 85900 && $(window).scrollTop() < 87200) {
+	if ($(window).scrollTop() > 89900 && $(window).scrollTop() < 91200) {
 		$('.vid_use').get(0).play();
 	} else {
 		$('.vid_use').get(0).pause();
 	};
-	if ($(window).scrollTop() > 87300 && $(window).scrollTop() < 88200) {
+	if ($(window).scrollTop() > 91300 && $(window).scrollTop() < 92200) {
 		$('.vid_change').get(0).play();
 	} else {
 		$('.vid_change').get(0).pause();
