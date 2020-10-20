@@ -29,75 +29,32 @@
 <body id="skrollr-body">
 <script type="text/javascript">
 $(document).ready( function() {
+
 	var total = ($(document).height() - $(window).height())
 
 	$('.img_logo').click(function() {
-		// $('html').scrollTop( 0 )
-		$('html').animate({opacity:'0'}, 150)
-		$('html').animate( { scrollTop : 0 }, 400 / 100 * ($(window).scrollTop() / total * 100) )
-		$('html').animate({opacity:'1'}, 150)
+		$('html').animate({opacity:'0'}, 150);
+		$('html').animate( { scrollTop : 0 }, 400 / 100 * ($(window).scrollTop() / total * 100) );
+		$('html').animate({opacity:'1'}, 150);
+		$('html').animate( { scrollTop : 550 }, 1200);
 	});
 	$('.goto_TTHC').click(function() {
-		// $('html').scrollTop( 8600 )
-		$('html').animate({opacity:'0'}, 150)
+		$('html').animate({opacity:'0'}, 150);
 		$('html').animate( { scrollTop : 8600 }, 400 / 100 * (Math.abs(($(window).scrollTop() - 8600) / total * 100)) );
-		$('html').animate({opacity:'1'}, 150)
+		$('html').animate({opacity:'1'}, 150);
 	});
 	$('.goto_CTRG').click(function() {
-		// $('html').scrollTop( 30200 )
-		$('html').animate({opacity:'0'}, 150)
+		$('html').animate({opacity:'0'}, 150);
 		$('html').animate( { scrollTop : 31600 }, 400 / 100 * (Math.abs(($(window).scrollTop() - 31600) / total * 100)) );
-		$('html').animate({opacity:'1'}, 150)
+		$('html').animate({opacity:'1'}, 150);
 	});
 	$('.goto_DDFX').click(function() {
-		// $('html').scrollTop( 69200 )
-		$('html').animate({opacity:'0'}, 150)
+		$('html').animate({opacity:'0'}, 150);
 		$('html').animate( { scrollTop : 73200 }, 400 / 100 * (Math.abs(($(window).scrollTop() - 73200) / total * 100)) );
-		$('html').animate({opacity:'1'}, 150)
-	});
-
-	$('.btn_openli').click(function() {		
-		if ($(this).attr('style') == 'transform: rotateZ(0deg);') {
-			$('.btn_openli').css('transform','rotateZ(180deg)');
-			$('.menu').css('height','222px')
-		} else {
-			$('.btn_openli').css('transform','rotateZ(0deg)');
-			$('.menu').css('height','60px')
-		};
+		$('html').animate({opacity:'1'}, 150);
 	});
 });
 
-$(function(){
-	var FirstScroll = 0;
-	var prevScrollTop = $(window).scrollTop(),
-	tp = $(window).scrollTop();
-	$(window).scroll(function(e){
-		tp = $(this).scrollTop();
-		if ( tp > prevScrollTop ){
-			$('.menu').css('top','-60px');
-			$('.btn_openli').css('transform','rotateZ(0deg)');
-			$('.menu').css('height','60px')
-		} else if( tp < prevScrollTop ) {
-			$('.menu').css('top','0px');
-			$('.btn_openli').css('transform','rotateZ(0deg)');
-			$('.menu').css('height','60px')
-		}
-		prevScrollTop = tp;
-	});
-});
-$(document).ready( function() {
-	$('.goto_TTHC').mouseover(function(){$(this).text('똑똑흑채');})
-	$('.goto_TTHC').mouseleave(function(){$(this).text('TTHC');})
-
-	$('.goto_CTRG').mouseover(function(){$(this).text('카트리지');})
-	$('.goto_CTRG').mouseleave(function(){$(this).text('CTRG');})
-
-	$('.goto_DDFX').mouseover(function(){$(this).text('단단픽서');})
-	$('.goto_DDFX').mouseleave(function(){$(this).text('DDFX');})
-
-	$('.goto_shop').mouseover(function(){$(this).text('구매하기');})
-	$('.goto_shop').mouseleave(function(){$(this).text('SHOP');})
-});
 </script>
 <div class="menu">
 	<div class="wrap">
@@ -209,7 +166,7 @@ data-16200="opacity:0; display:none;"></div>
 </div>
 
 <div class="sec_06 wrap_txt" data-26999="display:none;" data-27000="top:100%; display:block;" data-28200="top:-50%;">
-	<p class="tit long"><span style="font-weight: 400;">뭘 좋아할지 몰라서</span><br>다 준비했어요</p>
+	<p class="tit long"><span>뭘 좋아할지 몰라서</span><br>다 준비했어요</p>
 	<p class="desc" style="margin-top: 24px;">한국인의 모발에 가장 잘 맞는 다양한 컬러를 준비했습니다.</p>
 </div>
 <div class="sec_06 wrap_colors" data-27399="display:none;" data-27400="top:100%; display:block;" data-28200="top:0%;" data-30600="top:0%; display: block;" data-31200="top:-102%; display: none;">
