@@ -42,17 +42,17 @@ $(document).ready( function() {
 	$('.goto_shop').mouseleave(function(){$(this).text('SHOP');})
 
 	$(window).scroll(function() {
-		if ($(window).scrollTop() > 88800 && $(window).scrollTop() < 89900) {
+		if ($(window).scrollTop() > 92800 && $(window).scrollTop() < 93900) {
 			$('.vid_ready').get(0).play();
 		} else {
 			$('.vid_ready').get(0).pause();
 		};
-		if ($(window).scrollTop() > 89900 && $(window).scrollTop() < 91200) {
+		if ($(window).scrollTop() > 93900 && $(window).scrollTop() < 95200) {
 			$('.vid_use').get(0).play();
 		} else {
 			$('.vid_use').get(0).pause();
 		};
-		if ($(window).scrollTop() > 91300 && $(window).scrollTop() < 92200) {
+		if ($(window).scrollTop() > 95300 && $(window).scrollTop() < 96200) {
 			$('.vid_change').get(0).play();
 		} else {
 			$('.vid_change').get(0).pause();
