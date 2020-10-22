@@ -343,8 +343,6 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .menu .wrap .goto_CTRG,
 .menu .wrap .goto_DDFX,
 .menu .wrap .goto_shop {margin-left: 122px;}
-.sec_02.container_video {width: 96%; left: 2%;}
-.sec_02.container_video video {width: 720px;}
 .sec_06.wrap_img {height: 528px;}
 .sec_06.wrap_img .img_filter_half {width: 720px;}
 .sec_06.wrap_txt.half {transform: translateY(-40px);}
@@ -355,8 +353,6 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .sec_09.img_carousel {width: 1930px;}
 .sec_09.img_carousel a {width: 640px; height: 320px; overflow: hidden; display: inline-block;}
 .sec_09.img_carousel a img {width: auto; height: 140%; display: block;transform: translate(-15%, -15%);}
-.sec_095.container_video {width: 96%; left: 2%;}
-.sec_095.container_video video {width: 720px;}
 .sec_10.wrap_img.examples {width: 960px; height: 310px;}
 .sec_10.wrap_img.examples .item {height: 270px;}
 .sec_10.wrap_img.examples .item img.before {height: 270px; left: calc(50% - 260px);}
@@ -491,7 +487,7 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .sec_02.wrap_txt .headline.large:nth-child(4) {left:calc(50% - -120px);}
 .sec_02.wrap_txt .desc {font-size: 16px; line-height: 28px; width: 90%; white-space: normal;}
 .sec_02.wrap_img .img_tthc_1 {width: auto; height: 100%; left: 52%; transform: translateX(-50%);}
-.sec_02.container_video video {left: 58%;}
+.sec_02.container_video video {width: 100%;}
 
 .sec_03.wrap_txt {transform: translateY(40px);}
 .sec_03.wrap_txt .headline {width: 90%; font-size: 60px; line-height: 74px;}
@@ -572,6 +568,7 @@ box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);}
 .sec_09.img_carousel a {width: 200px; height: 200px; overflow: hidden; display: inline-block;}
 .sec_09.img_carousel a img {width: auto; height: 100%; display: block;transform: translate(-29%, 0%);}
 .sec_095.wrap_txt .headline {font-size: 42px; line-height: 54px; letter-spacing: -1px;}
+.sec_095.container_video video {width: 100%;}
 .sec_10.wrap_txt {transform: translate(-50%, 32px); left: 50%;}
 .sec_10.wrap_txt .roll {left: 50%; transform: translate(-238%, calc(-50% - 98px));}
 .sec_10.wrap_txt .headline {transform: translate(-37%, calc(-50% - 44px)); left: 50%;}
